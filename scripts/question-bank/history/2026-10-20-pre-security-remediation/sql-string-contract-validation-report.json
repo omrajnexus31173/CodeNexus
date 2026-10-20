@@ -1,0 +1,1497 @@
+{
+  "generated_at": "2026-10-19T16:56:24.599Z",
+  "dialect": "SQLite practice runner only",
+  "total": 186,
+  "passed": 186,
+  "failed": 0,
+  "results": [
+    {
+      "id": "sql-bank-0029",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0045",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0061",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0077",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0093",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0109",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0125",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0141",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0157",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0173",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0189",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0205",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0221",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0237",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0253",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0269",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0285",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0301",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0317",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0333",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0349",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0365",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0381",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0397",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0413",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0429",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0445",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0461",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0477",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0493",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0509",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0525",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0541",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0557",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0573",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0589",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0605",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0621",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0637",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0653",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0669",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0685",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0701",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0717",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0733",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0749",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0765",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0781",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0797",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0813",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0829",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0845",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0861",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0877",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0893",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0909",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0925",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0941",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0957",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0973",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-0989",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1005",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1021",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1037",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1053",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1069",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1085",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1101",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1117",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1133",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1149",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1165",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1181",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1197",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1213",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1229",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1245",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1261",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1277",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1293",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1309",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1325",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1341",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1357",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1373",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1389",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1405",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1421",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1437",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1453",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1469",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1485",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1501",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1517",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1533",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1549",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1565",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1581",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1597",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1613",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1629",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1645",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1661",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1677",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1693",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1709",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1725",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1741",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1757",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1773",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1789",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1805",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1821",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1837",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1853",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1869",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1885",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1901",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1917",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1933",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1949",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1965",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1981",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-1997",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2013",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2029",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2045",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2061",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2077",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2093",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2109",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2125",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2141",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2157",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2173",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2189",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2205",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2221",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2237",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2253",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2269",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2285",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2301",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2317",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2333",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2349",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2365",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2381",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2397",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2413",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2429",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2445",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2461",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2477",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2493",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2509",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2525",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2541",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2557",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2573",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2589",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2605",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2621",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2637",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2653",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2669",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2685",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2701",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2717",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2733",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2749",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2765",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2781",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2797",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2813",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2829",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2845",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2861",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2877",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2893",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2909",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2925",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2941",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2957",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2973",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    },
+    {
+      "id": "sql-bank-2989",
+      "reference_status": "Accepted",
+      "starter_status": "Wrong Answer",
+      "passed": true,
+      "validation_status": "generated",
+      "is_exam_eligible": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-10-20T12:58:25.891Z",
+  "approved": true,
+  "approved_count": 200,
+  "pools": {
+    "c-lang": 25,
+    "cpp": 25,
+    "dsa": 25,
+    "java": 25,
+    "javascript": 25,
+    "python": 25,
+    "sql-databases": 25,
+    "system-design": 25
+  },
+  "safety": {
+    "generated_eligible": 0,
+    "non_tested_eligible": 0,
+    "total": 18191
+  },
+  "evidence_reports": {
+    "verified_core_generated_at": "2026-10-20T12:58:13.784Z",
+    "topic_linked_generated_at": "2026-10-20T12:56:51.358Z",
+    "hand_curated_generated_at": "2026-10-20T12:56:15.974Z"
+  }
+}

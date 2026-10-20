@@ -1,0 +1,483 @@
+{
+  "generated_at": "2026-10-19T17:12:57.384Z",
+  "scope": {
+    "generated_rows": 17991,
+    "execution_enabled": false,
+    "sample_per_stratum": 2,
+    "sql_execution_dialect": "SQLite practice runner only; this is not PostgreSQL validation"
+  },
+  "totals": {
+    "by_language": {
+      "c": 2998,
+      "cpp": 2999,
+      "java": 2999,
+      "javascript": 2999,
+      "python": 2997,
+      "sql": 2999
+    },
+    "by_cohort": {
+      "procedural-seed": 132,
+      "pipeline-bank": 17859
+    },
+    "by_family": {
+      "sum-stream": 110,
+      "sliding-window-minmax": 12835,
+      "string-token-transform": 1117,
+      "arithmetic-transform": 744,
+      "matrix-border-interior-max": 186,
+      "sql-sum-stream": 22,
+      "sql-department-aggregate": 2791,
+      "sql-phrase-token-transform": 186
+    },
+    "by_difficulty": {
+      "Easy": 2179,
+      "Medium": 15626,
+      "Hard": 186
+    },
+    "by_domain_alignment": {
+      "not-stated-in-title": 132,
+      "mismatch": 13208,
+      "partial": 2232,
+      "direct": 2419
+    },
+    "by_reference_kind": {
+      "code-with-output": 14992,
+      "sql-query": 2999
+    },
+    "by_starter_kind": {
+      "task-scaffold": 15200,
+      "other-code": 2791
+    },
+    "exam_eligible_generated": 0,
+    "deterministic_exam_ready": 0,
+    "exam_eligible_but_not_exam_ready": 0,
+    "valid_course": 17991,
+    "valid_topic_course": 0,
+    "oracle_all_match": 17991,
+    "sample_oracle_match": 17991
+  },
+  "missing_fields": {
+    "topic_id": 17991
+  },
+  "flags": {
+    "missing_topic_id": 17991,
+    "fewer_than_3_tests": 4226,
+    "invalid_topic_course_mapping": 17991,
+    "duplicate_exact_tests_within_language": 17553,
+    "domain_family_mismatch": 13208,
+    "sample_differs_from_first_test": 1117,
+    "domain_family_partial_alignment": 2232
+  },
+  "flag_examples": {
+    "missing_topic_id": [
+      "c-004",
+      "c-005",
+      "c-006",
+      "c-007",
+      "c-008",
+      "c-009",
+      "c-010",
+      "c-011",
+      "c-012",
+      "c-013"
+    ],
+    "fewer_than_3_tests": [
+      "c-004",
+      "c-005",
+      "c-006",
+      "c-007",
+      "c-008",
+      "c-009",
+      "c-010",
+      "c-011",
+      "c-012",
+      "c-013"
+    ],
+    "invalid_topic_course_mapping": [
+      "c-004",
+      "c-005",
+      "c-006",
+      "c-007",
+      "c-008",
+      "c-009",
+      "c-010",
+      "c-011",
+      "c-012",
+      "c-013"
+    ],
+    "duplicate_exact_tests_within_language": [
+      "c-004",
+      "c-005",
+      "c-006",
+      "c-007",
+      "c-008",
+      "c-009",
+      "c-010",
+      "c-011",
+      "c-012",
+      "c-013"
+    ],
+    "domain_family_mismatch": [
+      "c-bank-0025",
+      "c-bank-0027",
+      "c-bank-0028",
+      "c-bank-0029",
+      "c-bank-0030",
+      "c-bank-0031",
+      "c-bank-0032",
+      "c-bank-0034",
+      "c-bank-0035",
+      "c-bank-0036"
+    ],
+    "sample_differs_from_first_test": [
+      "c-bank-0026",
+      "c-bank-0038",
+      "c-bank-0042",
+      "c-bank-0054",
+      "c-bank-0058",
+      "c-bank-0070",
+      "c-bank-0074",
+      "c-bank-0086",
+      "c-bank-0090",
+      "c-bank-0102"
+    ],
+    "domain_family_partial_alignment": [
+      "c-bank-0026",
+      "c-bank-0033",
+      "c-bank-0039",
+      "c-bank-0042",
+      "c-bank-0049",
+      "c-bank-0055",
+      "c-bank-0058",
+      "c-bank-0065",
+      "c-bank-0071",
+      "c-bank-0074"
+    ]
+  },
+  "duplicates": {
+    "exact_statement": {
+      "unique_signatures": 17903,
+      "duplicate_groups": 22,
+      "rows_in_duplicate_groups": 110,
+      "largest_group": 5
+    },
+    "canonical_statement": {
+      "unique_signatures": 8,
+      "duplicate_groups": 8,
+      "rows_in_duplicate_groups": 17991,
+      "largest_group": 12835
+    },
+    "exact_tests": {
+      "unique_signatures": 297,
+      "duplicate_groups": 198,
+      "rows_in_duplicate_groups": 17892,
+      "largest_group": 7123
+    },
+    "exact_tests_within_language": {
+      "unique_signatures": 630,
+      "duplicate_groups": 192,
+      "rows_in_duplicate_groups": 17553,
+      "largest_group": 2791
+    },
+    "exact_reference": {
+      "unique_signatures": 1149,
+      "duplicate_groups": 711,
+      "rows_in_duplicate_groups": 17553,
+      "largest_group": 372
+    },
+    "canonical_reference": {
+      "unique_signatures": 449,
+      "duplicate_groups": 197,
+      "rows_in_duplicate_groups": 17739,
+      "largest_group": 2791
+    },
+    "canonical_task_and_tests": {
+      "unique_signatures": 297,
+      "duplicate_groups": 198,
+      "rows_in_duplicate_groups": 17892,
+      "largest_group": 7123
+    },
+    "canonical_task_rows_spanning_multiple_difficulties": 0
+  },
+  "by_cohort_language_family": {
+    "procedural-seed|c|sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|c|sliding-window-minmax": {
+      "total": 2232,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2232,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 186,
+      "domain_mismatch": 2046,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|c|string-token-transform": {
+      "total": 372,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 372,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 186,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|c|arithmetic-transform": {
+      "total": 372,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 372,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 186,
+      "domain_mismatch": 186,
+      "reference_not_executable": 0
+    },
+    "procedural-seed|cpp|sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|cpp|sliding-window-minmax": {
+      "total": 2791,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2791,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 372,
+      "domain_mismatch": 2233,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|cpp|string-token-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "procedural-seed|java|sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|java|string-token-transform": {
+      "total": 187,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 187,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 187,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|java|sliding-window-minmax": {
+      "total": 2604,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2604,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 372,
+      "domain_mismatch": 2046,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|java|arithmetic-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "procedural-seed|javascript|sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|javascript|sliding-window-minmax": {
+      "total": 2791,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2791,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 186,
+      "domain_mismatch": 2419,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|javascript|string-token-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 186,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "procedural-seed|python|sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|python|sliding-window-minmax": {
+      "total": 2417,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2417,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 186,
+      "domain_mismatch": 2045,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|python|arithmetic-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|python|string-token-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|python|matrix-border-interior-max": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 186,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "procedural-seed|sql|sql-sum-stream": {
+      "total": 22,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 22,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 0,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|sql|sql-department-aggregate": {
+      "total": 2791,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 2791,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 372,
+      "domain_partial": 372,
+      "domain_mismatch": 2047,
+      "reference_not_executable": 0
+    },
+    "pipeline-bank|sql|sql-phrase-token-transform": {
+      "total": 186,
+      "exam_eligible": 0,
+      "valid_topic_course": 0,
+      "oracle_all_match": 186,
+      "expected_output_mismatch": 0,
+      "sample_output_mismatch": 0,
+      "domain_direct": 0,
+      "domain_partial": 0,
+      "domain_mismatch": 186,
+      "reference_not_executable": 0
+    }
+  },
+  "execution": {
+    "sampled": 0,
+    "reference_statuses": {},
+    "starter_statuses": {},
+    "execution_ok": 0,
+    "behaviorally_consistent": 0,
+    "exam_ready_after_execution": 0,
+    "by_cohort_language_family": {}
+  },
+  "execution_sample": [],
+  "interpretation": [
+    "Generated status is not evidence of correctness.",
+    "A reference being executable is insufficient; oracle, domain, topic, difficulty, starter and duplicate checks must also pass before promotion.",
+    "SQL execution results in this report are SQLite practice-runner results only."
+  ]
+}

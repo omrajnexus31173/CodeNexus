@@ -1,0 +1,71 @@
+{
+  "name": "code-nexus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 3000",
+    "lint": "next lint",
+    "test": "node scripts/test-all.js && node scripts/test-security-suite.js",
+    "test:features": "node scripts/test-all.js",
+    "test:security": "node scripts/test-security-suite.js",
+    "test:curriculum": "node scripts/test-curriculum-engine.js",
+    "test:examples": "node scripts/validate-curriculum-examples.js",
+    "test:sql": "node scripts/validate-sql-examples.js",
+    "test:sandbox": "node scripts/audit-sandbox-deep.js",
+    "verify:db": "node scripts/verify-db.js",
+    "verify:questions": "node scripts/validate-question-bank-deep.js",
+    "report:coverage": "node scripts/generate-coverage-report.js",
+    "migrate:education": "node scripts/migrate-education-engine.js",
+    "seed:education": "node scripts/seed-education-engine.js",
+    "test:expansion": "node scripts/test-curriculum-expansion.js",
+    "migrate:integrity": "node scripts/migrate-learning-integrity.js",
+    "seed:topic-questions": "node scripts/seed-topic-linked-questions.js",
+    "test:topic-questions": "node scripts/validate-topic-linked-questions.js",
+    "test:topic-duplicates": "node scripts/check-topic-linked-question-duplicates.js",
+    "audit:starters": "node scripts/audit-curated-starters.js",
+    "test:integrity": "node scripts/test-learning-integrity.js",
+    "audit:generated": "node scripts/audit-generated-questions.js",
+    "audit:generated:deterministic": "node scripts/audit-generated-questions.js --no-execute --out scripts/question-bank/generated-question-audit-deterministic.json",
+    "repair:generated": "node scripts/repair-generated-question-bank.js",
+    "quarantine:generated": "node scripts/apply-generated-quarantine.js"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "dotenv": "^18.0.8",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.59.0",
+    "next": "15.5.28",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "resend": "^6.34.1",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.5.28",
+    "postcss": "8.5.31",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "8.5.31",
+    "monaco-editor": {
+      "dompurify": "3.4.17"
+    }
+  }
+}

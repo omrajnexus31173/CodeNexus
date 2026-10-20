@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-10-20T12:56:04.341Z",
+  "dry_run": false,
+  "generated_rows_quarantined_from_exams": 0,
+  "other_non_tested_rows_quarantined_from_exams": 0,
+  "before": {
+    "total": 18000,
+    "generated": 17991,
+    "generated_eligible": 0,
+    "non_tested_eligible": 0,
+    "tested": 9,
+    "tested_eligible": 9,
+    "original_curated_ids_present": 141,
+    "pools_by_course": [
+      {
+        "course_id": "app-dev",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "c-lang",
+        "eligible_tested_pool": 2,
+        "tested_total": 2,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "cpp",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "dsa",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "html-css",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "java",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "javascript",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "python",
+        "eligible_tested_pool": 3,
+        "tested_total": 3,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "sql-databases",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "system-design",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      }
+    ]
+  },
+  "after": {
+    "total": 18000,
+    "generated": 17991,
+    "generated_eligible": 0,
+    "non_tested_eligible": 0,
+    "tested": 9,
+    "tested_eligible": 9,
+    "original_curated_ids_present": 141,
+    "pools_by_course": [
+      {
+        "course_id": "app-dev",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "c-lang",
+        "eligible_tested_pool": 2,
+        "tested_total": 2,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "cpp",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "dsa",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "html-css",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "java",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "javascript",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "python",
+        "eligible_tested_pool": 3,
+        "tested_total": 3,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "sql-databases",
+        "eligible_tested_pool": 1,
+        "tested_total": 1,
+        "generated_eligible": 0
+      },
+      {
+        "course_id": "system-design",
+        "eligible_tested_pool": 0,
+        "tested_total": 0,
+        "generated_eligible": 0
+      }
+    ]
+  },
+  "note": "Eligibility of tested rows was not changed. No records were deleted and no validation statuses were promoted."
+}

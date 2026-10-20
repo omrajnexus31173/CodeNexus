@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-19T15:41:32.684Z",
+  "candidates": 112,
+  "validation_report_generated_at": "2026-10-19T15:40:44.492Z",
+  "before": {
+    "total": 18079,
+    "generated": 17991,
+    "tested": 88
+  },
+  "after": {
+    "total": 18191,
+    "generated": 17991,
+    "tested": 200,
+    "non_tested_eligible": 0,
+    "core_eligible": 0,
+    "core_total": 112
+  },
+  "status_inserted_or_updated": "tested",
+  "exam_eligible": false,
+  "practice_only": true
+}

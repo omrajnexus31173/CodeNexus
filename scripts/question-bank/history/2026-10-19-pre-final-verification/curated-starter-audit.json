@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-10-19T15:45:22.768Z",
+  "curated_total": 9,
+  "curated_summary": {
+    "ok": 9
+  },
+  "curated": [
+    {
+      "id": "c-001",
+      "language": "c",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "c-002",
+      "language": "c",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "cpp-001",
+      "language": "cpp",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "java-001",
+      "language": "java",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "js-001",
+      "language": "javascript",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "py-001",
+      "language": "python",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "py-002",
+      "language": "python",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "py-003",
+      "language": "python",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    },
+    {
+      "id": "sql-001",
+      "language": "sql",
+      "validation_status": "tested",
+      "starter_missing": false,
+      "starter_status": "Wrong Answer",
+      "reference_status": "Accepted",
+      "classification": "ok"
+    }
+  ],
+  "generated_sample_total": 0,
+  "generated_sample_summary": {},
+  "generated_sample": []
+}

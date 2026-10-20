@@ -1,0 +1,5076 @@
+{
+  "generated_at": "2026-10-19T15:42:39.094Z",
+  "started_at": "2026-10-19T15:41:58.465Z",
+  "base_url": "http://127.0.0.1:3000",
+  "filters": {
+    "language": null,
+    "topic": null
+  },
+  "total": 79,
+  "passed": 79,
+  "failed": 0,
+  "results": [
+    {
+      "id": "topic-c-bitwise-operators",
+      "topic_id": "c-bitwise-operators",
+      "language": "c",
+      "hash": "8e925b36581714dfd2eddae16b5239be0a9763cc510833020783a6cbcd05f72f",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "flags=5 eligible=no",
+            "actualOutput": "flags=5 eligible=no",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "flags=7 eligible=yes",
+            "actualOutput": "flags=7 eligible=yes",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "flags=0 eligible=no",
+            "actualOutput": "flags=0 eligible=no",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "flags=2 eligible=no",
+            "actualOutput": "flags=2 eligible=no",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "flags=5 eligible=no",
+            "actualOutput": "flags=0 eligible=no",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "flags=7 eligible=yes",
+            "actualOutput": "flags=0 eligible=no",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "flags=0 eligible=no",
+            "actualOutput": "flags=0 eligible=no",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "flags=2 eligible=no",
+            "actualOutput": "flags=0 eligible=no",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-arrays-1d",
+      "topic_id": "c-arrays-1d",
+      "language": "c",
+      "hash": "ccc6256e4d2e583751925146037ff50e79085110df24c958a9dce1df0b4b4474",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "hot=3 hottest=3",
+            "actualOutput": "hot=3 hottest=3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "hot=0 hottest=0",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "hot=4 hottest=1",
+            "actualOutput": "hot=4 hottest=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "hot=0 hottest=0",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "hot=3 hottest=3",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "hot=0 hottest=0",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "hot=4 hottest=1",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "hot=0 hottest=0",
+            "actualOutput": "hot=0 hottest=0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-pointer-arithmetic-arrays",
+      "topic_id": "c-pointer-arithmetic-arrays",
+      "language": "c",
+      "hash": "2247012e1aec6e586e3ccc054d102e99558064418417a4fb224d4aa407ec0017",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=27 offset=2",
+            "actualOutput": "max=27 offset=2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=-8 offset=0",
+            "actualOutput": "max=-8 offset=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=5 offset=4",
+            "actualOutput": "max=5 offset=4",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "max=9 offset=0",
+            "actualOutput": "max=9 offset=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=27 offset=2",
+            "actualOutput": "max=14 offset=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=-8 offset=0",
+            "actualOutput": "max=-8 offset=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=5 offset=4",
+            "actualOutput": "max=1 offset=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "max=9 offset=0",
+            "actualOutput": "max=9 offset=0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-strings-stringh",
+      "topic_id": "c-strings-stringh",
+      "language": "c",
+      "hash": "404d14016e075c8900ce4b1be10b4b7364fb6ebcf0e147f4bbbf8adaf22a1a6d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "vowels=5",
+            "actualOutput": "vowels=5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "vowels=0",
+            "actualOutput": "vowels=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "vowels=5",
+            "actualOutput": "vowels=5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "vowels=3",
+            "actualOutput": "vowels=3",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "vowels=5",
+            "actualOutput": "vowels=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "vowels=0",
+            "actualOutput": "vowels=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "vowels=5",
+            "actualOutput": "vowels=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "vowels=3",
+            "actualOutput": "vowels=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-recursion-basics",
+      "topic_id": "c-recursion-basics",
+      "language": "c",
+      "hash": "8853f8245678790df3b4ce8734744289aebebb4f9ad339fefcea4d756ecef267",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "18",
+            "actualOutput": "18",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0",
+            "actualOutput": "0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "9",
+            "actualOutput": "9",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1",
+            "actualOutput": "1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "45",
+            "actualOutput": "45",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "18",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0",
+            "actualOutput": "0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "9",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "45",
+            "actualOutput": "0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-enums-typedef",
+      "topic_id": "c-enums-typedef",
+      "language": "c",
+      "hash": "1845c8380a4df4cdcef7d854b7aca9c271f3cd8bbf47553f2a6308f920d3b6ab",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "action=GO value=2",
+            "actualOutput": "action=GO value=2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "action=STOP value=0",
+            "actualOutput": "action=STOP value=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "action=WAIT value=1",
+            "actualOutput": "action=WAIT value=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "action=BROKEN value=9",
+            "actualOutput": "action=BROKEN value=9",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "action=GO value=2",
+            "actualOutput": "action=BROKEN value=2",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "action=STOP value=0",
+            "actualOutput": "action=BROKEN value=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "action=WAIT value=1",
+            "actualOutput": "action=BROKEN value=1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "action=BROKEN value=9",
+            "actualOutput": "action=BROKEN value=9",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-preprocessor-macros",
+      "topic_id": "c-preprocessor-macros",
+      "language": "c",
+      "hash": "f51f62c5d1ba557b65603c65ced75a9ed9e1e3a16c6e0e4d66e97032f7f0869e",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2",
+            "actualOutput": "2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1",
+            "actualOutput": "1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-10",
+            "actualOutput": "-10",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "5",
+            "actualOutput": "5",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2",
+            "actualOutput": "7",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1",
+            "actualOutput": "4",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-10",
+            "actualOutput": "-3",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "5",
+            "actualOutput": "5",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-c-command-line-args",
+      "topic_id": "c-command-line-args",
+      "language": "c",
+      "hash": "572bf0fbb157b482202f587b4c59016d2f99a8823331060235ca8834b621c0ad",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "name: Riya\nunknown: -x",
+            "actualOutput": "name: Riya\nunknown: -x",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "",
+            "actualOutput": "",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "name: \nunknown: --verbose\nname: Kabir",
+            "actualOutput": "name: \nunknown: --verbose\nname: Kabir",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "unknown: file.txt\nname: An",
+            "actualOutput": "unknown: file.txt\nname: An",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "name: Riya\nunknown: -x",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "",
+            "actualOutput": "",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "name: \nunknown: --verbose\nname: Kabir",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "unknown: file.txt\nname: An",
+            "actualOutput": "",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-variables-auto-const",
+      "topic_id": "cpp-variables-auto-const",
+      "language": "cpp",
+      "hash": "da1563c45e1cb0bcfc9b3eac9827b057833763bd6f5c4c86cc04ddb46ad207a1",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 15,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "total with tax=472",
+            "actualOutput": "total with tax=472",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "total with tax=0",
+            "actualOutput": "total with tax=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "total with tax=116",
+            "actualOutput": "total with tax=116",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "total with tax=118",
+            "actualOutput": "total with tax=118",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "total with tax=472",
+            "actualOutput": "total with tax=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "total with tax=0",
+            "actualOutput": "total with tax=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "total with tax=116",
+            "actualOutput": "total with tax=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "total with tax=118",
+            "actualOutput": "total with tax=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-functions-overloading",
+      "topic_id": "cpp-functions-overloading",
+      "language": "cpp",
+      "hash": "9260c698545e35cc05f0856357bc78b103637d564bea6bcbd8464221ad63a71f",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "roll 12\nname Diya\nroll 12 name Diya",
+            "actualOutput": "roll 12\nname Diya\nroll 12 name Diya",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "roll 7\nname Kabir\nroll 7 name Kabir",
+            "actualOutput": "roll 7\nname Kabir\nroll 7 name Kabir",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "roll 0\nname A\nroll 0 name A",
+            "actualOutput": "roll 0\nname A\nroll 0 name A",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "roll 12\nname Diya\nroll 12 name Diya",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "roll 7\nname Kabir\nroll 7 name Kabir",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "roll 0\nname A\nroll 0 name A",
+            "actualOutput": "",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-std-string-deep",
+      "topic_id": "cpp-std-string-deep",
+      "language": "cpp",
+      "hash": "fe01eb81da88c0394562b57ed8a3494232119450eda05b7ac41e186c246bc421",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "diya.sharma\nexample.com",
+            "actualOutput": "diya.sharma\nexample.com",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "invalid",
+            "actualOutput": "invalid",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a\nb",
+            "actualOutput": "a\nb",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "first\nsecond@third",
+            "actualOutput": "first\nsecond@third",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "diya.sharma\nexample.com",
+            "actualOutput": "diya.sharma@example.com",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "invalid",
+            "actualOutput": "plainword",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a\nb",
+            "actualOutput": "a@b",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "first\nsecond@third",
+            "actualOutput": "first@second@third",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-operator-overloading",
+      "topic_id": "cpp-operator-overloading",
+      "language": "cpp",
+      "hash": "e5940b13d8a04fafceac0e56261102aa3c09ce23f0ebeaffce1554cc855ce21b",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 12,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1\n3/5",
+            "actualOutput": "1\n3/5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n7/8",
+            "actualOutput": "0\n7/8",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1\n0/9",
+            "actualOutput": "1\n0/9",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1\n6/3",
+            "actualOutput": "1\n6/3",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1\n3/5",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n7/8",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1\n0/9",
+            "actualOutput": "0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1\n6/3",
+            "actualOutput": "0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-copy-move-semantics",
+      "topic_id": "cpp-copy-move-semantics",
+      "language": "cpp",
+      "hash": "72db00197783d2fbce6631fbd75f97d6b3836c7c8d1e3f8745445d4e3a0bf8b7",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "a=2 b=3 copy_last=Meera",
+            "actualOutput": "a=2 b=3 copy_last=Meera",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "a=0 b=1 copy_last=Solo",
+            "actualOutput": "a=0 b=1 copy_last=Solo",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a=3 b=4 copy_last=D",
+            "actualOutput": "a=3 b=4 copy_last=D",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "a=2 b=3 copy_last=Meera",
+            "actualOutput": "a=2 b=2 copy_last=Meera",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "a=0 b=1 copy_last=Solo",
+            "actualOutput": "a=0 b=0 copy_last=Solo",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a=3 b=4 copy_last=D",
+            "actualOutput": "a=3 b=3 copy_last=D",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-lambdas-algorithms",
+      "topic_id": "cpp-lambdas-algorithms",
+      "language": "cpp",
+      "hash": "5085cf77cfc45d94a81195d037814059407e8c5a33010630ed78eb20602fe13c",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3\n20 12 12 7 5 3",
+            "actualOutput": "3\n20 12 12 7 5 3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1\n1 0 -1",
+            "actualOutput": "1\n1 0 -1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0\n5",
+            "actualOutput": "0\n5",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3\n20 12 12 7 5 3",
+            "actualOutput": "0\n5 12 7 20 3 12",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1\n1 0 -1",
+            "actualOutput": "0\n-1 0 1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0\n5",
+            "actualOutput": "0\n5",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-templates-basics",
+      "topic_id": "cpp-templates-basics",
+      "language": "cpp",
+      "hash": "0cd429ab1c36c9b077210e37c49b78c192302b1f82fdf0e3bae8b5b1633a747b",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "12\n4.5\n-6",
+            "actualOutput": "12\n4.5\n-6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n6.75\n30",
+            "actualOutput": "0\n6.75\n30",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-21\n1.5\n9",
+            "actualOutput": "-21\n1.5\n9",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 11,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "12\n4.5\n-6",
+            "actualOutput": "4\n1.5\n-2",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n6.75\n30",
+            "actualOutput": "0\n2.25\n10",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-21\n1.5\n9",
+            "actualOutput": "-7\n0.5\n3",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-smart-pointers",
+      "topic_id": "cpp-smart-pointers",
+      "language": "cpp",
+      "hash": "45b3812daad905e55b5d938cfa470bd42a194e42b99a9d084fdb92b55c646041",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "42\n1\n42",
+            "actualOutput": "42\n1\n42",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n1\n0",
+            "actualOutput": "0\n1\n0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-7\n1\n-7",
+            "actualOutput": "-7\n1\n-7",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "42\n1\n42",
+            "actualOutput": "42\n0\n42",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n1\n0",
+            "actualOutput": "0\n0\n0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "-7\n1\n-7",
+            "actualOutput": "-7\n0\n-7",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-exception-handling",
+      "topic_id": "cpp-exception-handling",
+      "language": "cpp",
+      "hash": "3041e4e029f1c168c5c4df5d04e9c105e1abd89d45342549644d6fadb1fe4f87",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "30",
+            "actualOutput": "30",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rejected: age out of range",
+            "actualOutput": "rejected: age out of range",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rejected: age out of range",
+            "actualOutput": "rejected: age out of range",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "120",
+            "actualOutput": "120",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 13,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "30",
+            "actualOutput": "30",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rejected: age out of range",
+            "actualOutput": "200",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rejected: age out of range",
+            "actualOutput": "-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "120",
+            "actualOutput": "120",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-cpp-file-streams",
+      "topic_id": "cpp-file-streams",
+      "language": "cpp",
+      "hash": "2d6dd6ac038158d41d7c2bebcc5ac2a08338e2ef765a8f98c78f1c1668ffce92",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 14,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sum=15",
+            "actualOutput": "sum=15",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sum=0",
+            "actualOutput": "sum=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sum=55",
+            "actualOutput": "sum=55",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "sum=5050",
+            "actualOutput": "sum=5050",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sum=15",
+            "actualOutput": "sum=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sum=0",
+            "actualOutput": "sum=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sum=55",
+            "actualOutput": "sum=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "sum=5050",
+            "actualOutput": "sum=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-operators-expressions",
+      "topic_id": "py-operators-expressions",
+      "language": "python",
+      "hash": "6250f116eebeb64544e3f5c07f3985d3bf58104d2fb1b06bc83cff6a4f44ce86",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 44,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "boxes=8 leftover=5",
+            "actualOutput": "boxes=8 leftover=5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "boxes=2 leftover=0",
+            "actualOutput": "boxes=2 leftover=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "boxes=0 leftover=0",
+            "actualOutput": "boxes=0 leftover=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "boxes=0 leftover=5",
+            "actualOutput": "boxes=0 leftover=5",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 27,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "boxes=8 leftover=5",
+            "actualOutput": "boxes=0 leftover=53",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "boxes=2 leftover=0",
+            "actualOutput": "boxes=0 leftover=12",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "boxes=0 leftover=0",
+            "actualOutput": "boxes=0 leftover=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "boxes=0 leftover=5",
+            "actualOutput": "boxes=0 leftover=5",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-strings-in-depth",
+      "topic_id": "py-strings-in-depth",
+      "language": "python",
+      "hash": "06800f65cf5d40664d2ada9c5487c9f30ad58b190b03bceea39fa0cf9124055c",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 24,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Name: Meera Sharma (initials: MS)",
+            "actualOutput": "Name: Meera Sharma (initials: MS)",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Name: Arjun Kumar Patel (initials: AKP)",
+            "actualOutput": "Name: Arjun Kumar Patel (initials: AKP)",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Name: A B (initials: AB)",
+            "actualOutput": "Name: A B (initials: AB)",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 24,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Name: Meera Sharma (initials: MS)",
+            "actualOutput": "Name: meera sharma (initials: )",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Name: Arjun Kumar Patel (initials: AKP)",
+            "actualOutput": "Name: ARJUN kumar PATEL (initials: )",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Name: A B (initials: AB)",
+            "actualOutput": "Name: a b (initials: )",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-lists-tuples",
+      "topic_id": "py-lists-tuples",
+      "language": "python",
+      "hash": "af694487fb38152445c9a887d5c0506f79bb8e6b23faa2e9af48e24c740af510",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 23,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sorted=[19, 22, 28, 31, 31, 31] count31=3 original=[22, 31, 19, 31, 28, 31]",
+            "actualOutput": "sorted=[19, 22, 28, 31, 31, 31] count31=3 original=[22, 31, 19, 31, 28, 31]",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sorted=[1, 2, 3] count9=0 original=[3, 1, 2]",
+            "actualOutput": "sorted=[1, 2, 3] count9=0 original=[3, 1, 2]",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sorted=[-5, -1, -1] count-1=2 original=[-1, -5, -1]",
+            "actualOutput": "sorted=[-5, -1, -1] count-1=2 original=[-1, -5, -1]",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 24,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sorted=[19, 22, 28, 31, 31, 31] count31=3 original=[22, 31, 19, 31, 28, 31]",
+            "actualOutput": "sorted=[22, 31, 19, 31, 28, 31] count31=0 original=[22, 31, 19, 31, 28, 31]",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sorted=[1, 2, 3] count9=0 original=[3, 1, 2]",
+            "actualOutput": "sorted=[3, 1, 2] count9=0 original=[3, 1, 2]",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sorted=[-5, -1, -1] count-1=2 original=[-1, -5, -1]",
+            "actualOutput": "sorted=[-1, -5, -1] count-1=0 original=[-1, -5, -1]",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-dicts-sets",
+      "topic_id": "py-dicts-sets",
+      "language": "python",
+      "hash": "4faa4d8cf454df1a1c71fedf9f8383aa7d6c5f5742830e46b313a2d65bcc9b84",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 28,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "total=70",
+            "actualOutput": "total=70",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "total=12",
+            "actualOutput": "total=12",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "total=0",
+            "actualOutput": "total=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "total=100",
+            "actualOutput": "total=100",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 29,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "total=70",
+            "actualOutput": "total=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "total=12",
+            "actualOutput": "total=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "total=0",
+            "actualOutput": "total=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "total=100",
+            "actualOutput": "total=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-functions-scope",
+      "topic_id": "py-functions-scope",
+      "language": "python",
+      "hash": "e19fa964257a0b658ec639b1974ff06f7ea82800db880547dc8fef78d7e5c252",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 26,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "30.0",
+            "actualOutput": "30.0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0.0",
+            "actualOutput": "0.0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "5.0",
+            "actualOutput": "5.0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1.5",
+            "actualOutput": "1.5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "0.0",
+            "actualOutput": "0.0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 22,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "30.0",
+            "actualOutput": "0.0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0.0",
+            "actualOutput": "0.0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "5.0",
+            "actualOutput": "0.0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1.5",
+            "actualOutput": "0.0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "0.0",
+            "actualOutput": "0.0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-exception-handling",
+      "topic_id": "py-exception-handling",
+      "language": "python",
+      "hash": "43f37a3ec37782979bb537311bf29796df9214f086172f420d4faca7e8bcfc14",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 28,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "25\n-1\nnot positive",
+            "actualOutput": "25\n-1\nnot positive",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "not positive\n7\n-1",
+            "actualOutput": "not positive\n7\n-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "101\n1\n-1",
+            "actualOutput": "101\n1\n-1",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 24,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "25\n-1\nnot positive",
+            "actualOutput": "25\ninvalid literal for int() with base 10: 'abc'\n-3",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "not positive\n7\n-1",
+            "actualOutput": "0\n7\ninvalid literal for int() with base 10: '3.5'",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "101\n1\n-1",
+            "actualOutput": "101\n1\ninvalid literal for int() with base 10: 'xyz'",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-file-handling",
+      "topic_id": "py-file-handling",
+      "language": "python",
+      "hash": "34213d15ea7e24eb8ba3e046697aae924805859864a475e44259c0b06bf1cb82",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 32,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[1, 2, 3, 4, 5] sum=15",
+            "actualOutput": "[1, 2, 3, 4, 5] sum=15",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[] sum=0",
+            "actualOutput": "[] sum=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[1, 2, 3] sum=6",
+            "actualOutput": "[1, 2, 3] sum=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[1, 2, 3, 4, 5, 6, 7, 8] sum=36",
+            "actualOutput": "[1, 2, 3, 4, 5, 6, 7, 8] sum=36",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 28,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[1, 2, 3, 4, 5] sum=15",
+            "actualOutput": "[] sum=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[] sum=0",
+            "actualOutput": "[] sum=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[1, 2, 3] sum=6",
+            "actualOutput": "[] sum=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[1, 2, 3, 4, 5, 6, 7, 8] sum=36",
+            "actualOutput": "[] sum=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-modules-imports",
+      "topic_id": "py-modules-imports",
+      "language": "python",
+      "hash": "a9a9a80cfa6061c5c45f74cc281560657b89dad69d33d0e1ab3c151ac7faeb6d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 66,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "area=3.14 mean=20.00",
+            "actualOutput": "area=3.14 mean=20.00",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "area=0.00 mean=5.00",
+            "actualOutput": "area=0.00 mean=5.00",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "area=12.57 mean=1.50",
+            "actualOutput": "area=12.57 mean=1.50",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 49,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "area=3.14 mean=20.00",
+            "actualOutput": "area=0.00 mean=0.00",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "area=0.00 mean=5.00",
+            "actualOutput": "area=0.00 mean=0.00",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "area=12.57 mean=1.50",
+            "actualOutput": "area=0.00 mean=0.00",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-oop-classes",
+      "topic_id": "py-oop-classes",
+      "language": "python",
+      "hash": "f060900c78c86f2561e5def5fccbccd3b4910c790bfde71e0d88c3336e49d5d3",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 22,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Rectangle 4x3 area=12",
+            "actualOutput": "Rectangle 4x3 area=12",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Rectangle 7x7 area=49",
+            "actualOutput": "Rectangle 7x7 area=49",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Rectangle 12x5 area=60",
+            "actualOutput": "Rectangle 12x5 area=60",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 20,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Rectangle 4x3 area=12",
+            "actualOutput": "Rectangle 4x3 area=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Rectangle 7x7 area=49",
+            "actualOutput": "Rectangle 7x7 area=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Rectangle 12x5 area=60",
+            "actualOutput": "Rectangle 12x5 area=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-iterators-generators",
+      "topic_id": "py-iterators-generators",
+      "language": "python",
+      "hash": "29074309f37775efb693ece2b4ec46c1ee037c9ae8c3a9bad4c7b337fb6fe62d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 20,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[0, 2, 4, 6, 8, 10]",
+            "actualOutput": "[0, 2, 4, 6, 8, 10]",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[0]",
+            "actualOutput": "[0]",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[0, 2, 4, 6]",
+            "actualOutput": "[0, 2, 4, 6]",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[0]",
+            "actualOutput": "[0]",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 20,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[0, 2, 4, 6, 8, 10]",
+            "actualOutput": "[]",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[0]",
+            "actualOutput": "[]",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[0, 2, 4, 6]",
+            "actualOutput": "[]",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[0]",
+            "actualOutput": "[]",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-decorators-closures",
+      "topic_id": "py-decorators-closures",
+      "language": "python",
+      "hash": "cade9b65e7bfb05322bdbfe0d679dafd013262f2dac4239a45a88ee9a142a3a0",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 22,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "50",
+            "actualOutput": "50",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "negative blocked\n0",
+            "actualOutput": "negative blocked\n0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0",
+            "actualOutput": "0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "120",
+            "actualOutput": "120",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 23,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "50",
+            "actualOutput": "50",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "negative blocked\n0",
+            "actualOutput": "-30",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0",
+            "actualOutput": "0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "120",
+            "actualOutput": "120",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-py-testing-basics",
+      "topic_id": "py-testing-basics",
+      "language": "python",
+      "hash": "886161082d6ac7bb30ac265cf4400ce556b06fc24cabf305802aa37304bbacf9",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 38,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=11\nmax3 tests passed",
+            "actualOutput": "max=11\nmax3 tests passed",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=-3\nmax3 tests passed",
+            "actualOutput": "max=-3\nmax3 tests passed",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=5\nmax3 tests passed",
+            "actualOutput": "max=5\nmax3 tests passed",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 22,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=11\nmax3 tests passed",
+            "actualOutput": "max=3\nmax3 tests passed",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=-3\nmax3 tests passed",
+            "actualOutput": "max=-8\nmax3 tests passed",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=5\nmax3 tests passed",
+            "actualOutput": "max=5\nmax3 tests passed",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-variables-operators",
+      "topic_id": "java-variables-operators",
+      "language": "java",
+      "hash": "35a4f48967c1761122c5aaad26c604189f5e7ca4dd5aafe3d5dae745c4501e89",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 120,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "86.0\ntrue",
+            "actualOutput": "86.0\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "80.0\nfalse",
+            "actualOutput": "80.0\nfalse",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "85.0\ntrue",
+            "actualOutput": "85.0\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "2.3333333333333335\nfalse",
+            "actualOutput": "2.3333333333333335\nfalse",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 122,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "86.0\ntrue",
+            "actualOutput": "86.0\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "80.0\nfalse",
+            "actualOutput": "80.0\nfalse",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "85.0\ntrue",
+            "actualOutput": "85.0\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "2.3333333333333335\nfalse",
+            "actualOutput": "2.0\nfalse",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-control-flow",
+      "topic_id": "java-control-flow",
+      "language": "java",
+      "hash": "fd5dbc919541b396ab59687380724309f1f369c38ddc3cf9118b4d4033f0f199",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 108,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "cold\npleasant\npleasant\nhot\nhot",
+            "actualOutput": "cold\npleasant\npleasant\nhot\nhot",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "cold",
+            "actualOutput": "cold",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "cold\npleasant\nhot",
+            "actualOutput": "cold\npleasant\nhot",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 116,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "cold\npleasant\npleasant\nhot\nhot",
+            "actualOutput": "pleasant\npleasant\npleasant\npleasant\npleasant",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "cold",
+            "actualOutput": "pleasant",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "cold\npleasant\nhot",
+            "actualOutput": "pleasant\npleasant\npleasant",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-methods-overloading-recursion",
+      "topic_id": "java-methods-overloading-recursion",
+      "language": "java",
+      "hash": "327e16142b7101bdce4e95a219f212090a12791c0d82b80f7290f9d6792b033b",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 145,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sumTo(5)=15\n3",
+            "actualOutput": "sumTo(5)=15\n3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sumTo(0)=0\n0",
+            "actualOutput": "sumTo(0)=0\n0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sumTo(100)=5050\n1",
+            "actualOutput": "sumTo(100)=5050\n1",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 134,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sumTo(5)=15\n3",
+            "actualOutput": "sumTo(5)=0\n3",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sumTo(0)=0\n0",
+            "actualOutput": "sumTo(0)=0\n0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sumTo(100)=5050\n1",
+            "actualOutput": "sumTo(100)=0\n1",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-strings-stringbuilder",
+      "topic_id": "java-strings-stringbuilder",
+      "language": "java",
+      "hash": "223a148a4fa18d700c59fec8de3e5c1c9340140fd1957df7c4a3842b401e2f9b",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 113,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "ITEM: pen PRICE: 10 TYPE: ink",
+            "actualOutput": "ITEM: pen PRICE: 10 TYPE: ink",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "ITEM: book PRICE: 250 TYPE: paper",
+            "actualOutput": "ITEM: book PRICE: 250 TYPE: paper",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "ITEM: a PRICE: 1 TYPE: z",
+            "actualOutput": "ITEM: a PRICE: 1 TYPE: z",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 105,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "ITEM: pen PRICE: 10 TYPE: ink",
+            "actualOutput": "pen,10,ink",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "ITEM: book PRICE: 250 TYPE: paper",
+            "actualOutput": "book, 250 , paper",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "ITEM: a PRICE: 1 TYPE: z",
+            "actualOutput": "a,1,z",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-arrays-varargs",
+      "topic_id": "java-arrays-varargs",
+      "language": "java",
+      "hash": "f2a8e10a36dc36016ba9ade01ebd8dd1a5a4b93529ddcb2c7f00ac308f2ba55a",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 194,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=92\n[40, 58, 71, 92, 92]\ncount92=2",
+            "actualOutput": "max=92\n[40, 58, 71, 92, 92]\ncount92=2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=7\n[7]\ncount7=1",
+            "actualOutput": "max=7\n[7]\ncount7=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=4\n[1, 1, 3, 4]\ncount9=0",
+            "actualOutput": "max=4\n[1, 1, 3, 4]\ncount9=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 133,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "max=92\n[40, 58, 71, 92, 92]\ncount92=2",
+            "actualOutput": "max=58\n[58, 92, 71, 92, 40]\ncount92=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "max=7\n[7]\ncount7=1",
+            "actualOutput": "max=7\n[7]\ncount7=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "max=4\n[1, 1, 3, 4]\ncount9=0",
+            "actualOutput": "max=3\n[3, 1, 4, 1]\ncount9=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-classes-objects",
+      "topic_id": "java-classes-objects",
+      "language": "java",
+      "hash": "7ac9443ac7b6058c474222edf379d54e4bda3a5e1ab6f4efb0e04d6809c89c75",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 148,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Clean Code: 480 pages",
+            "actualOutput": "Clean Code: 480 pages",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Notes: 120 pages",
+            "actualOutput": "Notes: 120 pages",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "A B: 30 pages",
+            "actualOutput": "A B: 30 pages",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 134,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Clean Code: 480 pages",
+            "actualOutput": "Clean Code: 480 pages",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Notes: 120 pages",
+            "actualOutput": "Notes: -2 pages",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "A B: 30 pages",
+            "actualOutput": "A B: 30 pages",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-inheritance-polymorphism",
+      "topic_id": "java-inheritance-polymorphism",
+      "language": "java",
+      "hash": "db65005160fbbfe04f7ba91c9ee8ea190cfc6da5a01d16bb6c8c5cce458fe87d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 131,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Maruti: beep\nTata: HONK",
+            "actualOutput": "Maruti: beep\nTata: HONK",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ford: beep\nVolvo: HONK",
+            "actualOutput": "Ford: beep\nVolvo: HONK",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Mini: beep\nMack: HONK",
+            "actualOutput": "Mini: beep\nMack: HONK",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 135,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Maruti: beep\nTata: HONK",
+            "actualOutput": "Maruti: beep\nTata: beep",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ford: beep\nVolvo: HONK",
+            "actualOutput": "Ford: beep\nVolvo: beep",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Mini: beep\nMack: HONK",
+            "actualOutput": "Mini: beep\nMack: beep",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-abstract-interfaces",
+      "topic_id": "java-abstract-interfaces",
+      "language": "java",
+      "hash": "48b1c984bd75cb2c3346ccc72d3a1f3fdb353d07a2a0c142a59f7140e411458e",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 102,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "78\n83",
+            "actualOutput": "78\n83",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "100\n100",
+            "actualOutput": "100\n100",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "40\n52",
+            "actualOutput": "40\n52",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 113,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "78\n83",
+            "actualOutput": "0\n78",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "100\n100",
+            "actualOutput": "0\n100",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "40\n52",
+            "actualOutput": "0\n40",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-exception-handling",
+      "topic_id": "java-exception-handling",
+      "language": "java",
+      "hash": "c78c61f366a474129a74309d8440ae339b9ebd2403f0c0586807855eae465f72",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 104,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "85\nbad format\nmarks must be 0..100",
+            "actualOutput": "85\nbad format\nmarks must be 0..100",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n100\nmarks must be 0..100",
+            "actualOutput": "0\n100\nmarks must be 0..100",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "bad format\n42\n99",
+            "actualOutput": "bad format\n42\n99",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 99,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "85\nbad format\nmarks must be 0..100",
+            "actualOutput": "85\nbad format\n150",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n100\nmarks must be 0..100",
+            "actualOutput": "0\n100\n-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "bad format\n42\n99",
+            "actualOutput": "bad format\n42\n99",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-generics-basics",
+      "topic_id": "java-generics-basics",
+      "language": "java",
+      "hash": "dc97e322b20ec02e9afc1903574c144be158ac329046680dcc01db39fad07fd0",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 123,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "roll=12\n3.5=true",
+            "actualOutput": "roll=12\n3.5=true",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "id=0\n2.0=false",
+            "actualOutput": "id=0\n2.0=false",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "x=-4\n0.25=true",
+            "actualOutput": "x=-4\n0.25=true",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 114,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "roll=12\n3.5=true",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "id=0\n2.0=false",
+            "actualOutput": "",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "x=-4\n0.25=true",
+            "actualOutput": "",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-java-multithreading-basics",
+      "topic_id": "java-multithreading-basics",
+      "language": "java",
+      "hash": "b18f6cefe88545df9326a9bfc40db8c644b7578801f8bc1142fe53357d900540",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 171,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "worker sum=5050\ncounter=100000",
+            "actualOutput": "worker sum=5050\ncounter=100000",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "worker sum=0\ncounter=0",
+            "actualOutput": "worker sum=0\ncounter=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "worker sum=55\ncounter=14",
+            "actualOutput": "worker sum=55\ncounter=14",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "worker sum=500500\ncounter=2000",
+            "actualOutput": "worker sum=500500\ncounter=2000",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 132,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "worker sum=5050\ncounter=100000",
+            "actualOutput": "worker sum=5050\ncounter=50000",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "worker sum=0\ncounter=0",
+            "actualOutput": "worker sum=0\ncounter=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "worker sum=55\ncounter=14",
+            "actualOutput": "worker sum=55\ncounter=7",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "worker sum=500500\ncounter=2000",
+            "actualOutput": "worker sum=500500\ncounter=1000",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-strings-template-literals",
+      "topic_id": "js-strings-template-literals",
+      "language": "javascript",
+      "hash": "c6f8bcb247727ddd981ae28d4cd9d2d75546972229e36c937f48c97193826881",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 45,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "REPORT (pdf)",
+            "actualOutput": "REPORT (pdf)",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "NOTES (txt)",
+            "actualOutput": "NOTES (txt)",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "ARCHIVE.TAR (gz)",
+            "actualOutput": "ARCHIVE.TAR (gz)",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 48,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "REPORT (pdf)",
+            "actualOutput": "rePort.pdf",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "NOTES (txt)",
+            "actualOutput": "notes.TXT",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "ARCHIVE.TAR (gz)",
+            "actualOutput": "archive.tar.GZ",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-arrays-methods",
+      "topic_id": "js-arrays-methods",
+      "language": "javascript",
+      "hash": "b7fde652a7ac06ce59292aafadbc15bdbd84c54fa89ae70e1ab495751efdcbf4",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 47,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[ 142, 354, 590 ]\ntotal=1086",
+            "actualOutput": "[ 142, 354, 590 ]\ntotal=1086",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[]\ntotal=0",
+            "actualOutput": "[]\ntotal=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[ 119 ]\ntotal=119",
+            "actualOutput": "[ 119 ]\ntotal=119",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[]\ntotal=0",
+            "actualOutput": "[]\ntotal=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 46,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "[ 142, 354, 590 ]\ntotal=1086",
+            "actualOutput": "[]\ntotal=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "[]\ntotal=0",
+            "actualOutput": "[]\ntotal=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "[ 119 ]\ntotal=119",
+            "actualOutput": "[]\ntotal=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "[]\ntotal=0",
+            "actualOutput": "[]\ntotal=0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-objects-destructuring",
+      "topic_id": "js-objects-destructuring",
+      "language": "javascript",
+      "hash": "61f2df8195673efd069bfc4edb5c03bd63171cc6998e0ed64b5cdca267dc795c",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 44,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "320 340\nJS Guide",
+            "actualOutput": "320 340\nJS Guide",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2\nA",
+            "actualOutput": "1 2\nA",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "464 480\nClean Code Book",
+            "actualOutput": "464 480\nClean Code Book",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 45,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "320 340\nJS Guide",
+            "actualOutput": "320 320\nJS Guide",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2\nA",
+            "actualOutput": "1 1\nA",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "464 480\nClean Code Book",
+            "actualOutput": "464 464\nClean Code Book",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-functions-arrow-scope",
+      "topic_id": "js-functions-arrow-scope",
+      "language": "javascript",
+      "hash": "7e725942e2a298fcf4172ec4cb6747bea4e01064935ca58a3d9cbaf3f201e6fb",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 43,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "true\n9",
+            "actualOutput": "true\n9",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "false\n-1",
+            "actualOutput": "false\n-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "true\n42",
+            "actualOutput": "true\n42",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 46,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "true\n9",
+            "actualOutput": "false\n3",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "false\n-1",
+            "actualOutput": "false\n-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "true\n42",
+            "actualOutput": "false\n42",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-closures-scope",
+      "topic_id": "js-closures-scope",
+      "language": "javascript",
+      "hash": "d664d5d0b768458020678f06e08cd37bc839f46adea84a9f0ee2eebe95983d24",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 47,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "200\nno direct access: balance is a method, not data",
+            "actualOutput": "200\nno direct access: balance is a method, not data",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\nno direct access: balance is a method, not data",
+            "actualOutput": "0\nno direct access: balance is a method, not data",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "225\nno direct access: balance is a method, not data",
+            "actualOutput": "225\nno direct access: balance is a method, not data",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 48,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "200\nno direct access: balance is a method, not data",
+            "actualOutput": "100\nno direct access: balance is a method, not data",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\nno direct access: balance is a method, not data",
+            "actualOutput": "0\nno direct access: balance is a method, not data",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "225\nno direct access: balance is a method, not data",
+            "actualOutput": "250\nno direct access: balance is a method, not data",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-classes-prototypes",
+      "topic_id": "js-classes-prototypes",
+      "language": "javascript",
+      "hash": "f7881841fdf47b39f588920010a26d5ad07de8372a9503666861c29c062a3499",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 45,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "rectangle area=12\nsquare area=25\ntrue",
+            "actualOutput": "rectangle area=12\nsquare area=25\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rectangle area=20\nsquare area=1\ntrue",
+            "actualOutput": "rectangle area=20\nsquare area=1\ntrue",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rectangle area=16\nsquare area=9\ntrue",
+            "actualOutput": "rectangle area=16\nsquare area=9\ntrue",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 48,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "rectangle area=12\nsquare area=25\ntrue",
+            "actualOutput": "rectangle area=0\nsquare area=0\ntrue",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rectangle area=20\nsquare area=1\ntrue",
+            "actualOutput": "rectangle area=0\nsquare area=0\ntrue",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rectangle area=16\nsquare area=9\ntrue",
+            "actualOutput": "rectangle area=0\nsquare area=0\ntrue",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-error-handling",
+      "topic_id": "js-error-handling",
+      "language": "javascript",
+      "hash": "3f502f1e844dc164032c0816286d3dea2057e83ba543c16736fed2f760dd3d6e",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 43,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "25\nRangeError: age out of range\nRangeError: age out of range",
+            "actualOutput": "25\nRangeError: age out of range\nRangeError: age out of range",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n120\nRangeError: age out of range",
+            "actualOutput": "0\n120\nRangeError: age out of range",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "RangeError: age out of range\n42\nRangeError: age out of range",
+            "actualOutput": "RangeError: age out of range\n42\nRangeError: age out of range",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 42,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "25\nRangeError: age out of range\nRangeError: age out of range",
+            "actualOutput": "25\nNaN\n150",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\n120\nRangeError: age out of range",
+            "actualOutput": "0\n120\n121",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "RangeError: age out of range\n42\nRangeError: age out of range",
+            "actualOutput": "-1\n42\nNaN",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-modules-pattern",
+      "topic_id": "js-modules-pattern",
+      "language": "javascript",
+      "hash": "5894f5550986cf3480acaca8a4c327e79101d08a83b3df8fd7976f3abca4c064",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 46,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "GO!\nTeam",
+            "actualOutput": "GO!\nTeam",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "HELLO!\nWorld",
+            "actualOutput": "HELLO!\nWorld",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "A!\nB",
+            "actualOutput": "A!\nB",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 46,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "GO!\nTeam",
+            "actualOutput": "go\ntEAM",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "HELLO!\nWorld",
+            "actualOutput": "hello\nWORLD",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "A!\nB",
+            "actualOutput": "a\nb",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-fetch-async-data",
+      "topic_id": "js-fetch-async-data",
+      "language": "javascript",
+      "hash": "934106b59faafee5dc7e6d65efe65fe3c050d5e32d4f51d8929d900fdf8a3670",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 45,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Vadodara: 31C",
+            "actualOutput": "Vadodara: 31C",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Error: HTTP 503",
+            "actualOutput": "Error: HTTP 503",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Delhi: 40C",
+            "actualOutput": "Delhi: 40C",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 43,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Vadodara: 31C",
+            "actualOutput": "Vadodara: 31C",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Error: HTTP 503",
+            "actualOutput": "Pune: 28C",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Delhi: 40C",
+            "actualOutput": "Delhi: 40C",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-js-browser-storage-json",
+      "topic_id": "js-browser-storage-json",
+      "language": "javascript",
+      "hash": "72ef52661af303a3e78eeb4ae9efcc86ffe70830d173ec5fe7a3e87d3a0f6812",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 47,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Diya', score: 92 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'Diya', score: 92 }",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Kabir', score: 57 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'Kabir', score: 57 }",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Meera', score: 100 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'Meera', score: 100 }",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 58,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Diya', score: 92 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'none', score: 0 }",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Kabir', score: 57 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'none', score: 0 }",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "{ name: 'none', score: 0 }\n{ name: 'Meera', score: 100 }",
+            "actualOutput": "{ name: 'none', score: 0 }\n{ name: 'none', score: 0 }",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-relational-model-keys",
+      "topic_id": "sql-relational-model-keys",
+      "language": "sql",
+      "hash": "cc98fd76b4789c5e310fd0d6b00369ee5315a4787c5071dd61507178d8fa3b37",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 11,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "The Blue Umbrella|Ruskin Bond\nInterpreter of Maladies|Jhumpa Lahiri\nRusty|Ruskin Bond",
+            "actualOutput": "The Blue Umbrella|1",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-create-table-constraints",
+      "topic_id": "sql-create-table-constraints",
+      "language": "sql",
+      "hash": "c2775c9961eb699ef3e77179163f573f8b03033699a91e33a4e2ce211000e5d5",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "3 Idiots|8.4|0\nDangal|8.8|0",
+            "actualOutput": "3 Idiots|8.4|1",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-crud-dml",
+      "topic_id": "sql-crud-dml",
+      "language": "sql",
+      "hash": "d3076946d935fb8a49947f9dc657f0e713d4b8f69db4a66bc7a55f209f6898ca",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya|92\nMeera|61\nKabir|60",
+            "actualOutput": "Diya|92\nMeera|61\nKabir|60",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Dee|64\nEli|60\nCy|45\nBo|44\nAna|40",
+            "actualOutput": "Dee|64\nEli|60\nCy|45\nBo|44\nAna|40",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya|92\nMeera|61\nKabir|60",
+            "actualOutput": "Diya|97\nMeera|66\nKabir|60\nNils|35",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Dee|64\nEli|60\nCy|45\nBo|44\nAna|40",
+            "actualOutput": "Eli|65\nDee|64\nCy|45\nBo|44\nAna|40",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "Yan|39\nZed|15",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-filtering-like-patterns",
+      "topic_id": "sql-filtering-like-patterns",
+      "language": "sql",
+      "hash": "2cdea8d68f64aaa83ed88dbce5b0fa4d0c5c6c83934ef19e21e8e299d4243e07",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Asha\nDiya\nJaipur\nSurat\nVadodara",
+            "actualOutput": "Asha\nDiya\nJaipur\nSurat\nVadodara",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ana\nGoa\nKanpur",
+            "actualOutput": "Ana\nGoa\nKanpur",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "NagPUR",
+            "actualOutput": "NagPUR",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Asha\nDiya\nJaipur\nSurat\nVadodara",
+            "actualOutput": "Asha\nBina\nChet\nDiya\nJaipur\nSurat\nVadodara\nVadodara",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ana\nGoa\nKanpur",
+            "actualOutput": "Ana\nKim\nLee\nGoa\nGoa\nKanpur",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "NagPUR",
+            "actualOutput": "Solo\nNagPUR",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-case-conditional-aggregation",
+      "topic_id": "sql-case-conditional-aggregation",
+      "language": "sql",
+      "hash": "5133f14e39e2cad97cc3b7ccbab58c3eb4f5bb6b504913aa85debf6e206917ed",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2|2|2\nDiya:distinction\nAsha:distinction\nMeera:first_class\nBina:first_class\nChet:others\nKabir:others",
+            "actualOutput": "2|2|2\nDiya:distinction\nAsha:distinction\nMeera:first_class\nBina:first_class\nChet:others\nKabir:others",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1|1|0\nLee:distinction\nKim:first_class",
+            "actualOutput": "1|1|0\nLee:distinction\nKim:first_class",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0|0|1\nSolo:others",
+            "actualOutput": "0|0|1\nSolo:others",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2|2|2\nDiya:distinction\nAsha:distinction\nMeera:first_class\nBina:first_class\nChet:others\nKabir:others",
+            "actualOutput": "6|0|0\nDiya:others\nAsha:others\nMeera:others\nBina:others\nChet:others\nKabir:others",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1|1|0\nLee:distinction\nKim:first_class",
+            "actualOutput": "2|0|0\nLee:others\nKim:others",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0|0|1\nSolo:others",
+            "actualOutput": "1|0|0\nSolo:others",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-subqueries",
+      "topic_id": "sql-subqueries",
+      "language": "sql",
+      "hash": "2af603b77ece6a0a08365e2e4a16f3e445c567ab905a60226d74d422f2860efc",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya\nKabir",
+            "actualOutput": "Diya\nKabir",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Bo\nAna",
+            "actualOutput": "Bo\nAna",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya\nKabir",
+            "actualOutput": "Diya\nKabir\nMeera\nDiya\nKabir\nMeera",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Bo\nAna",
+            "actualOutput": "Ana\nBo\nCy\nAna\nBo\nCy",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "Solo\nSolo",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-ctes",
+      "topic_id": "sql-ctes",
+      "language": "sql",
+      "hash": "b7cf3208e9c3bc53521148ecbbb453286b3a6a046cc73f2ac02fa9aa8e43834d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "avg=80\nAsha\nChet",
+            "actualOutput": "avg=80\nAsha\nChet",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "avg=60\nAna",
+            "actualOutput": "avg=60\nAna",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "avg=42",
+            "actualOutput": "avg=42",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "avg=80\nAsha\nChet",
+            "actualOutput": "Asha\nBina\nChet\nDiya",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "avg=60\nAna",
+            "actualOutput": "Ana\nKim\nLee",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "avg=42",
+            "actualOutput": "Solo",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-views",
+      "topic_id": "sql-views",
+      "language": "sql",
+      "hash": "6629873960231717d86d90792ccce9b9ab9d8c0c64c4e42cf1f5399dbd17fc07",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya|99\nAsha|92\nChet|90",
+            "actualOutput": "Diya|99\nAsha|92\nChet|90",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ana|90\nLee|90",
+            "actualOutput": "Ana|90\nLee|90",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Diya|99\nAsha|92\nChet|90",
+            "actualOutput": "Diya|99\nAsha|92\nChet|90\nBina|81",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Ana|90\nLee|90",
+            "actualOutput": "Ana|90\nLee|90\nKim|89",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "",
+            "actualOutput": "Mid|89\nLow|10",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-normalization",
+      "topic_id": "sql-normalization",
+      "language": "sql",
+      "hash": "b72d61944d653bec4cbb7d20b8ed8b2a998e8532a81d91586d427376b429d409",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2 students, 2 courses, 3 enrollments\nAsha:DB\nAsha:OS\nBina:DB",
+            "actualOutput": "2 students, 2 courses, 3 enrollments\nAsha:DB\nAsha:OS\nBina:DB",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 students, 2 courses, 4 enrollments\nAnn:Art\nKim:Art\nKim:Math\nLee:Math",
+            "actualOutput": "3 students, 2 courses, 4 enrollments\nAnn:Art\nKim:Art\nKim:Math\nLee:Math",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 students, 1 courses, 1 enrollments\nSolo:Only",
+            "actualOutput": "1 students, 1 courses, 1 enrollments\nSolo:Only",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "2 students, 2 courses, 3 enrollments\nAsha:DB\nAsha:OS\nBina:DB",
+            "actualOutput": "Asha:DB\nAsha:OS\nBina:DB",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 students, 2 courses, 4 enrollments\nAnn:Art\nKim:Art\nKim:Math\nLee:Math",
+            "actualOutput": "Ann:Art\nKim:Art\nKim:Math\nLee:Math",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 students, 1 courses, 1 enrollments\nSolo:Only",
+            "actualOutput": "Solo:Only",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-indexes-explain",
+      "topic_id": "sql-indexes-explain",
+      "language": "sql",
+      "hash": "949bbf2b38a6d69b419afd47108041445cd484ef7ec645f38c2111c7fc3f41e2",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3|280|indexed:93",
+            "actualOutput": "3|280|indexed:93",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "2|160|indexed:80",
+            "actualOutput": "2|160|indexed:80",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1|77|indexed:77",
+            "actualOutput": "1|77|indexed:77",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "3|280|indexed:93",
+            "actualOutput": "4|360|all",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "2|160|indexed:80",
+            "actualOutput": "3|220|all",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1|77|indexed:77",
+            "actualOutput": "1|77|all",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sql-transactions-acid",
+      "topic_id": "sql-transactions-acid",
+      "language": "sql",
+      "hash": "7f629afb1f6d915126512edd8fca6b62ec6bbc7e22ed64ba8ea69ca9e2d1b366",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Asha:900\nBina:600",
+            "actualOutput": "Asha:900\nBina:600",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Asha:0\nBina:100",
+            "actualOutput": "Asha:0\nBina:100",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Asha:150\nBina:850",
+            "actualOutput": "Asha:150\nBina:850",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "Asha:900\nBina:600",
+            "actualOutput": "Asha:900\nBina:500",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "Asha:0\nBina:100",
+            "actualOutput": "Asha:0\nBina:0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "Asha:150\nBina:850",
+            "actualOutput": "Asha:150\nBina:750",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-arrays-searching",
+      "topic_id": "dsa-arrays-searching",
+      "language": "c",
+      "hash": "83d0c3b49a31a608474378fa997cef100ba0edc2a0065457994628da440987ba",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "401 at 3",
+            "actualOutput": "401 at 3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "400 at -1",
+            "actualOutput": "400 at -1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "5 at 0",
+            "actualOutput": "5 at 0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1 at -1",
+            "actualOutput": "1 at -1",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "401 at 3",
+            "actualOutput": "401 at -1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "400 at -1",
+            "actualOutput": "400 at -1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "5 at 0",
+            "actualOutput": "5 at -1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "1 at -1",
+            "actualOutput": "1 at -1",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-strings-algorithms",
+      "topic_id": "dsa-strings-algorithms",
+      "language": "c",
+      "hash": "41cb9ab644a7a72d4c0fdc2722fd82da5dd84b300a2f2004d2e9276c0dca280b",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "vowels=5 consonants=4",
+            "actualOutput": "vowels=5 consonants=4",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "vowels=0 consonants=6",
+            "actualOutput": "vowels=0 consonants=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "vowels=5 consonants=0",
+            "actualOutput": "vowels=5 consonants=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "vowels=3 consonants=6",
+            "actualOutput": "vowels=3 consonants=6",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "vowels=5 consonants=4",
+            "actualOutput": "vowels=0 consonants=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "vowels=0 consonants=6",
+            "actualOutput": "vowels=0 consonants=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "vowels=5 consonants=0",
+            "actualOutput": "vowels=0 consonants=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "vowels=3 consonants=6",
+            "actualOutput": "vowels=0 consonants=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-recursion-backtracking",
+      "topic_id": "dsa-recursion-backtracking",
+      "language": "c",
+      "hash": "9586a65e059157e1b390d1268f3d08dc6d5b3a41f97e275e91aac254f906de63",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "even_sum_subsets=8",
+            "actualOutput": "even_sum_subsets=8",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "even_sum_subsets=1",
+            "actualOutput": "even_sum_subsets=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "even_sum_subsets=8",
+            "actualOutput": "even_sum_subsets=8",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "even_sum_subsets=4",
+            "actualOutput": "even_sum_subsets=4",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "even_sum_subsets=2",
+            "actualOutput": "even_sum_subsets=2",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "even_sum_subsets=8",
+            "actualOutput": "even_sum_subsets=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "even_sum_subsets=1",
+            "actualOutput": "even_sum_subsets=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "even_sum_subsets=8",
+            "actualOutput": "even_sum_subsets=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "even_sum_subsets=4",
+            "actualOutput": "even_sum_subsets=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 5,
+            "expectedOutput": "even_sum_subsets=2",
+            "actualOutput": "even_sum_subsets=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-linked-lists",
+      "topic_id": "dsa-linked-lists",
+      "language": "c",
+      "hash": "c2561e964999c19aada092b4f5d2defdfa764157e94f9c4d690836e377ceca58",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 7,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sum=20 middle=6",
+            "actualOutput": "sum=20 middle=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sum=99 middle=99",
+            "actualOutput": "sum=99 middle=99",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sum=15 middle=3",
+            "actualOutput": "sum=15 middle=3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "sum=10 middle=5",
+            "actualOutput": "sum=10 middle=5",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 7,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "sum=20 middle=6",
+            "actualOutput": "sum=0 middle=2",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "sum=99 middle=99",
+            "actualOutput": "sum=0 middle=99",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "sum=15 middle=3",
+            "actualOutput": "sum=0 middle=1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "sum=10 middle=5",
+            "actualOutput": "sum=0 middle=-5",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-stacks",
+      "topic_id": "dsa-stacks",
+      "language": "c",
+      "hash": "c934a5de4cc689687273dc79f81a0d06055fb4dafe63cd6ba8f0c3821d149bf6",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "level: yes",
+            "actualOutput": "level: yes",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "lever: no",
+            "actualOutput": "lever: no",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a: yes",
+            "actualOutput": "a: yes",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "abca: no",
+            "actualOutput": "abca: no",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "level: yes",
+            "actualOutput": "level: no",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "lever: no",
+            "actualOutput": "lever: no",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "a: yes",
+            "actualOutput": "a: no",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "abca: no",
+            "actualOutput": "abca: no",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-queues",
+      "topic_id": "dsa-queues",
+      "language": "c",
+      "hash": "057a0871904d44aacd18e0cdcc489593ddadf94c5514ac7782583fec5c40c6b3",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "drained:\n10 15 20 25",
+            "actualOutput": "drained:\n10 15 20 25",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "drained:\n2 3 4 5",
+            "actualOutput": "drained:\n2 3 4 5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "drained:\n-2 -3 -4 -5",
+            "actualOutput": "drained:\n-2 -3 -4 -5",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "drained:\n10 15 20 25",
+            "actualOutput": "drained:",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "drained:\n2 3 4 5",
+            "actualOutput": "drained:",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "drained:\n-2 -3 -4 -5",
+            "actualOutput": "drained:",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-hashing-basics",
+      "topic_id": "dsa-hashing-basics",
+      "language": "c",
+      "hash": "bc3fdbe933b1a48de6cb7c852a5d425af14f3d7a827327146fb9cb3403ecb1dd",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "containsX=1 containsY=0 slotX=3",
+            "actualOutput": "containsX=1 containsY=0 slotX=3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "containsX=0 containsY=1 slotX=-1",
+            "actualOutput": "containsX=0 containsY=1 slotX=-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "containsX=0 containsY=0 slotX=-1",
+            "actualOutput": "containsX=0 containsY=0 slotX=-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "containsX=1 containsY=1 slotX=1",
+            "actualOutput": "containsX=1 containsY=1 slotX=1",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "containsX=1 containsY=0 slotX=3",
+            "actualOutput": "containsX=0 containsY=0 slotX=-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "containsX=0 containsY=1 slotX=-1",
+            "actualOutput": "containsX=0 containsY=0 slotX=-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "containsX=0 containsY=0 slotX=-1",
+            "actualOutput": "containsX=0 containsY=0 slotX=-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "containsX=1 containsY=1 slotX=1",
+            "actualOutput": "containsX=0 containsY=0 slotX=-1",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-sorting-basics",
+      "topic_id": "dsa-sorting-basics",
+      "language": "c",
+      "hash": "f21cb76ee87456f76e0a2453cd240908dd55b8bc72d57862f49343a35c2f20da",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 2 3 7 8 9\nshifts=10",
+            "actualOutput": "1 2 3 7 8 9\nshifts=10",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2 3 4\nshifts=0",
+            "actualOutput": "1 2 3 4\nshifts=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 3 4\nshifts=6",
+            "actualOutput": "1 2 3 4\nshifts=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "42\nshifts=0",
+            "actualOutput": "42\nshifts=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 2 3 7 8 9\nshifts=10",
+            "actualOutput": "9 3 7 1 8 2\nshifts=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2 3 4\nshifts=0",
+            "actualOutput": "1 2 3 4\nshifts=0",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 3 4\nshifts=6",
+            "actualOutput": "4 3 2 1\nshifts=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "42\nshifts=0",
+            "actualOutput": "42\nshifts=0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-sorting-divide-conquer",
+      "topic_id": "dsa-sorting-divide-conquer",
+      "language": "c",
+      "hash": "3b0ec5f13e7bd2d910a3aafb3ca7c20874553fec6add1adaf74d69f5fcc87600",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 4 8 12 15 19",
+            "actualOutput": "1 4 8 12 15 19",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2 3 4 5",
+            "actualOutput": "1 2 3 4 5",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 2 2",
+            "actualOutput": "1 2 2 2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "-9",
+            "actualOutput": "-9",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 4 8 12 15 19",
+            "actualOutput": "12 4 19 1 15 8",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1 2 3 4 5",
+            "actualOutput": "5 4 3 2 1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 2 2",
+            "actualOutput": "2 2 1 2",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "-9",
+            "actualOutput": "-9",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-binary-trees-traversals",
+      "topic_id": "dsa-binary-trees-traversals",
+      "language": "c",
+      "hash": "11abebe4050a2b6f96697a1a0529ad648d99843d1632247280ff0a3deba2cfc2",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 3 6 8 10 14\nheight=3",
+            "actualOutput": "1 3 6 8 10 14\nheight=3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "5\nheight=1",
+            "actualOutput": "5\nheight=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2\nheight=2",
+            "actualOutput": "1 2\nheight=2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "4 2 5 1 6 3 7\nheight=3",
+            "actualOutput": "4 2 5 1 6 3 7\nheight=3",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 3 6 8 10 14\nheight=3",
+            "actualOutput": "height=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "5\nheight=1",
+            "actualOutput": "height=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2\nheight=2",
+            "actualOutput": "height=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "4 2 5 1 6 3 7\nheight=3",
+            "actualOutput": "height=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-binary-search-tree",
+      "topic_id": "dsa-binary-search-tree",
+      "language": "c",
+      "hash": "db5f65a03e5edb9ddbdde67c7062eefc08c182ecd103ff6cd0e14e5a22c67a0d",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 3 4 6 7 8 10 13 14\nfound7=1 found9=0\n1 4 6 7 8 10 13 14",
+            "actualOutput": "1 3 4 6 7 8 10 13 14\nfound7=1 found9=0\n1 4 6 7 8 10 13 14",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 4 5 8 9\nfound4=1 found9=1\n3 4 8 9",
+            "actualOutput": "3 4 5 8 9\nfound4=1 found9=1\n3 4 8 9",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 3\nfound2=1 found99=0\n2 3",
+            "actualOutput": "1 2 3\nfound2=1 found99=0\n2 3",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "7\nfound7=1 found8=0\n",
+            "actualOutput": "7\nfound7=1 found8=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "1 3 4 6 7 8 10 13 14\nfound7=1 found9=0\n1 4 6 7 8 10 13 14",
+            "actualOutput": "found7=0 found9=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "3 4 5 8 9\nfound4=1 found9=1\n3 4 8 9",
+            "actualOutput": "found4=0 found9=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "1 2 3\nfound2=1 found99=0\n2 3",
+            "actualOutput": "found2=0 found99=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "7\nfound7=1 found8=0\n",
+            "actualOutput": "found7=0 found8=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-graphs-bfs-dfs",
+      "topic_id": "dsa-graphs-bfs-dfs",
+      "language": "c",
+      "hash": "5eefd40014192204fb8499597a4ae4eebeadb1e18bd72c0e3481335da7fd7225",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 10,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "0 1 3 5 2 4\nreachable=6",
+            "actualOutput": "0 1 3 5 2 4\nreachable=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\nreachable=1",
+            "actualOutput": "0\nreachable=1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0 1 2 3\nreachable=4",
+            "actualOutput": "0 1 2 3\nreachable=4",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "0\nreachable=1",
+            "actualOutput": "0\nreachable=1",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 9,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "0 1 3 5 2 4\nreachable=6",
+            "actualOutput": "reachable=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "0\nreachable=1",
+            "actualOutput": "reachable=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "0 1 2 3\nreachable=4",
+            "actualOutput": "reachable=0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "0\nreachable=1",
+            "actualOutput": "reachable=0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-dsa-dynamic-programming-intro",
+      "topic_id": "dsa-dynamic-programming-intro",
+      "language": "c",
+      "hash": "e28f1cc221bb2fdb6c80d2d4ba8592bcd4ca0bcf072c24b092e0cde86c211511",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "89\n10946",
+            "actualOutput": "89\n10946",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1\n1",
+            "actualOutput": "1\n1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "8\n13",
+            "actualOutput": "8\n13",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "2504730781961\n1346269",
+            "actualOutput": "2504730781961\n1346269",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 8,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "89\n10946",
+            "actualOutput": "0\n0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "1\n1",
+            "actualOutput": "1\n1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "8\n13",
+            "actualOutput": "0\n0",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "2504730781961\n1346269",
+            "actualOutput": "140727144484008\n0",
+            "passed": false
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sd-caching-strategies",
+      "topic_id": "sd-caching-strategies",
+      "language": "javascript",
+      "hash": "c92c2c48b7fe5c19785ce8777f6d5ce9e0a6a8ae1296c03212115e6b4105fa34",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 62,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "hits=2 misses=3\ncache: C A",
+            "actualOutput": "hits=2 misses=3\ncache: C A",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "hits=1 misses=5\ncache: B D A",
+            "actualOutput": "hits=1 misses=5\ncache: B D A",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "hits=1 misses=3\ncache: X",
+            "actualOutput": "hits=1 misses=3\ncache: X",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "hits=0 misses=0\ncache: (empty)",
+            "actualOutput": "hits=0 misses=0\ncache: (empty)",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 57,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "hits=2 misses=3\ncache: C A",
+            "actualOutput": "hits=2 misses=3\ncache: A B C",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "hits=1 misses=5\ncache: B D A",
+            "actualOutput": "hits=2 misses=4\ncache: A B C D",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "hits=1 misses=3\ncache: X",
+            "actualOutput": "hits=2 misses=2\ncache: X Y",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "hits=0 misses=0\ncache: (empty)",
+            "actualOutput": "hits=0 misses=0\ncache: (empty)",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sd-load-balancing-scaling",
+      "topic_id": "sd-load-balancing-scaling",
+      "language": "javascript",
+      "hash": "8cb720cd0878bda3e15a3f5abd6b71684b3ea5863bdc311ead47ac1fc7d5b396",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 45,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "rr=7\nleast=6",
+            "actualOutput": "rr=7\nleast=6",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rr=9\nleast=8",
+            "actualOutput": "rr=9\nleast=8",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rr=7\nleast=7",
+            "actualOutput": "rr=7\nleast=7",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "rr=0\nleast=0",
+            "actualOutput": "rr=0\nleast=0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 43,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "rr=7\nleast=6",
+            "actualOutput": "rr=11\nleast=11",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "rr=9\nleast=8",
+            "actualOutput": "rr=12\nleast=12",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "rr=7\nleast=7",
+            "actualOutput": "rr=7\nleast=7",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "rr=0\nleast=0",
+            "actualOutput": "rr=0\nleast=0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sd-queues-rate-limiting",
+      "topic_id": "sd-queues-rate-limiting",
+      "language": "javascript",
+      "hash": "d804ebcfa2cdfd847895784e84f0fcddbbcb51fe4a3fd92325a79fb463b3f565",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 52,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "OK OK OK 429 OK 429 OK",
+            "actualOutput": "OK OK OK 429 OK 429 OK",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "OK OK 429 OK 429 OK",
+            "actualOutput": "OK OK 429 OK 429 OK",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "OK 429 OK 429",
+            "actualOutput": "OK 429 OK 429",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "OK",
+            "actualOutput": "OK",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 52,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "OK OK OK 429 OK 429 OK",
+            "actualOutput": "OK OK OK OK OK OK OK",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "OK OK 429 OK 429 OK",
+            "actualOutput": "OK OK OK OK OK OK",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "OK 429 OK 429",
+            "actualOutput": "OK OK OK OK",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 4,
+            "expectedOutput": "OK",
+            "actualOutput": "OK",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    },
+    {
+      "id": "topic-sd-databases-sharding-replication",
+      "topic_id": "sd-databases-sharding-replication",
+      "language": "javascript",
+      "hash": "d6f582aac9f073d76f03cdcfdeb7cfd8dd506ba6c1118dee131bf3ed63462d0f",
+      "reference": {
+        "status": "Accepted",
+        "stderr": "",
+        "executionTimeMs": 46,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "primary=200\nper-replica=400\nstale=true\nalpha->shard-3 beta->shard-3 gamma->shard-2",
+            "actualOutput": "primary=200\nper-replica=400\nstale=true\nalpha->shard-3 beta->shard-3 gamma->shard-2",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "primary=50\nper-replica=334\nstale=false\nuser:1->shard-1 user:2->shard-0 user:3->shard-2 user:4->shard-1",
+            "actualOutput": "primary=50\nper-replica=334\nstale=false\nuser:1->shard-1 user:2->shard-0 user:3->shard-2 user:4->shard-1",
+            "passed": true
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "primary=7\nper-replica=0\nstale=false\nx->shard-0 y->shard-0 z->shard-0",
+            "actualOutput": "primary=7\nper-replica=0\nstale=false\nx->shard-0 y->shard-0 z->shard-0",
+            "passed": true
+          }
+        ]
+      },
+      "starter": {
+        "status": "Wrong Answer",
+        "stderr": "",
+        "executionTimeMs": 43,
+        "testCaseResults": [
+          {
+            "testCaseIndex": 1,
+            "expectedOutput": "primary=200\nper-replica=400\nstale=true\nalpha->shard-3 beta->shard-3 gamma->shard-2",
+            "actualOutput": "primary=200\nper-replica=0\nstale=false\nalpha->shard-1 beta->shard-1 gamma->shard-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 2,
+            "expectedOutput": "primary=50\nper-replica=334\nstale=false\nuser:1->shard-1 user:2->shard-0 user:3->shard-2 user:4->shard-1",
+            "actualOutput": "primary=50\nper-replica=0\nstale=false\nuser:1->shard-1 user:2->shard-1 user:3->shard-1 user:4->shard-1",
+            "passed": false
+          },
+          {
+            "testCaseIndex": 3,
+            "expectedOutput": "primary=7\nper-replica=0\nstale=false\nx->shard-0 y->shard-0 z->shard-0",
+            "actualOutput": "primary=7\nper-replica=0\nstale=false\nx->shard-0 y->shard-0 z->shard-0",
+            "passed": true
+          }
+        ]
+      },
+      "passed": true,
+      "reason": null
+    }
+  ]
+}

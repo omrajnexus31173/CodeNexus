@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-10-19T14:28:50.985Z",
+  "dry_run": false,
+  "rows_scanned": 17859,
+  "rows_updated": 17673,
+  "tests_with_expected_output_changed": 17550,
+  "rows_with_expected_output_changed": 13952,
+  "sample_outputs_changed": 13952,
+  "references_replaced": 14882,
+  "references_replaced_by_language_family": {
+    "c|sliding-window-minmax": 2232,
+    "c|string-token-transform": 372,
+    "c|arithmetic-transform": 372,
+    "cpp|sliding-window-minmax": 2791,
+    "cpp|string-token-transform": 186,
+    "java|string-token-transform": 187,
+    "java|sliding-window-minmax": 2604,
+    "java|arithmetic-transform": 186,
+    "javascript|sliding-window-minmax": 2791,
+    "javascript|string-token-transform": 186,
+    "python|sliding-window-minmax": 2417,
+    "python|arithmetic-transform": 186,
+    "python|string-token-transform": 186,
+    "python|matrix-border-interior-max": 186
+  },
+  "sql_thresholds_added": 2791,
+  "sql_fixture_inputs_with_drop_added": 8373,
+  "sql_sample_answer_queries_removed": 2791,
+  "sql_starters_replaced": 2791,
+  "skipped_sql_language_string_rows": 186,
+  "skipped_unknown_rows": 0,
+  "example_ids": {
+    "expected_output_changed": [
+      "c-bank-0025",
+      "c-bank-0026",
+      "c-bank-0027",
+      "c-bank-0028",
+      "c-bank-0029",
+      "c-bank-0030",
+      "c-bank-0031",
+      "c-bank-0032",
+      "c-bank-0035",
+      "c-bank-0036"
+    ],
+    "reference_replaced": [
+      "c-bank-0025",
+      "c-bank-0026",
+      "c-bank-0027",
+      "c-bank-0028",
+      "c-bank-0029",
+      "c-bank-0030",
+      "c-bank-0031",
+      "c-bank-0032",
+      "c-bank-0033",
+      "c-bank-0034"
+    ],
+    "sql_repaired": [
+      "sql-bank-0024",
+      "sql-bank-0025",
+      "sql-bank-0026",
+      "sql-bank-0027",
+      "sql-bank-0028",
+      "sql-bank-0030",
+      "sql-bank-0031",
+      "sql-bank-0032",
+      "sql-bank-0033",
+      "sql-bank-0034"
+    ],
+    "skipped_sql_string": [
+      "sql-bank-0029",
+      "sql-bank-0045",
+      "sql-bank-0061",
+      "sql-bank-0077",
+      "sql-bank-0093",
+      "sql-bank-0109",
+      "sql-bank-0125",
+      "sql-bank-0141",
+      "sql-bank-0157",
+      "sql-bank-0173"
+    ]
+  }
+}

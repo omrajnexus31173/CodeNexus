@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-10-19T15:09:13.378Z",
+  "dry_run": false,
+  "taxonomy_version": "curriculum-129-v2",
+  "taxonomy_topics": 129,
+  "before": {
+    "total": 18079,
+    "generated": 17991,
+    "tested": 88,
+    "eligible": 9
+  },
+  "rows_updated": 18079,
+  "valid_mapped": 88,
+  "unresolved_unassigned": 17991,
+  "generated_difficulties_changed": 10682,
+  "synthetic_topics_cleared": 17991,
+  "duplicates": {
+    "canonical_task_and_test_groups": 198,
+    "rows_in_canonical_duplicate_groups": 17892,
+    "exact_statement_groups": 22,
+    "rows_in_exact_statement_groups": 110
+  },
+  "by_cohort": {
+    "hand-curated": 9,
+    "procedural-seed": 132,
+    "pipeline-bank": 17859,
+    "topic-linked": 79
+  },
+  "by_family": {
+    "authored-topic-task": 88,
+    "sum-stream": 110,
+    "sliding-window-minmax": 12835,
+    "string-token-transform": 1117,
+    "arithmetic-transform": 744,
+    "matrix-border-interior-max": 186,
+    "sql-sum-stream": 22,
+    "sql-department-aggregate": 2791,
+    "sql-string-token-transform": 186
+  }
+}

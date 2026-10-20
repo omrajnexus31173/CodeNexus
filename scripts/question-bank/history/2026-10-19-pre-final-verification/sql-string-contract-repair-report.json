@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-19T15:06:28.080Z",
+  "dry_run": false,
+  "scanned": 186,
+  "updated": 186,
+  "by_rule_threshold": {
+    "consonants|threshold-4": 186
+  },
+  "examples": [
+    "sql-bank-0029",
+    "sql-bank-0045",
+    "sql-bank-0061",
+    "sql-bank-0077",
+    "sql-bank-0093",
+    "sql-bank-0109",
+    "sql-bank-0125",
+    "sql-bank-0141",
+    "sql-bank-0157",
+    "sql-bank-0173"
+  ]
+}
