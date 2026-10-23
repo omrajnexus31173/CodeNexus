@@ -31,7 +31,7 @@ export default function ChatbotWidget() {
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: `Hello! I am your **Code Nexus Assistant**.\n\nChoose a mode above:\n• 🎓 **Learning Assistant**: Ask me to explain C pointers, OOP, Big O, or debug compiler errors.\n• 🌐 **Website Support**: Ask about points (+4 for questions, 50 on course completion), exams (>85%), certificates, or unlocking library books (150 pts).`,
+      text: `Hello! I am the built-in **Code Nexus Guide**.\n\nChoose a mode above:\n• 🎓 **Learning Guide**: I can explain selected foundations such as C pointers, OOP encapsulation, SQL joins, recursion, Big O, and segmentation faults. For complete lessons, open the relevant course topic.\n• 🌐 **Website Support**: Ask about points (+4 for questions, 50 on course completion), exams (>85%), certificates, or unlocking library books (150 pts).`,
       mode: 'learning',
       timestamp: 'Just now',
     },
@@ -110,25 +110,28 @@ export default function ChatbotWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 max-w-[calc(100vw-2rem)]">
       {/* Floating Toggle Button */}
       {!isOpen && (
         <button
+          type="button"
           onClick={() => setIsOpen(true)}
           className="group flex items-center space-x-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all duration-200"
-          title="Open Code Nexus AI Assistant"
+          title="Open Code Nexus Guide"
+          aria-label="Open Code Nexus Guide"
+          aria-expanded={isOpen}
         >
           <div className="relative">
-            <Bot className="w-5 h-5 text-white animate-bounce" />
+            <Bot className="w-5 h-5 text-white" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-slate-950"></span>
           </div>
-          <span className="text-xs font-semibold tracking-wide pr-1">Nexus AI Assistant</span>
+          <span className="hidden min-[420px]:inline text-xs font-semibold tracking-wide pr-1">Code Nexus Guide</span>
         </button>
       )}
 
       {/* Expanded Chat Window */}
       {isOpen && (
-        <div className="w-[380px] sm:w-[420px] h-[550px] bg-slate-950/95 border border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl animate-in fade-in slide-in-from-bottom-4 duration-200">
+        <div className="w-[min(420px,calc(100vw-2rem))] h-[min(550px,calc(100dvh-2rem))] bg-slate-950/95 border border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl animate-in fade-in slide-in-from-bottom-4 duration-200" role="dialog" aria-label="Code Nexus Guide">
           {/* Header */}
           <div className="px-4 py-3 bg-gradient-to-r from-slate-900 to-slate-950 border-b border-slate-800 flex items-center justify-between">
             <div className="flex items-center space-x-2.5">
@@ -137,18 +140,20 @@ export default function ChatbotWidget() {
               </div>
               <div>
                 <h3 className="text-xs font-bold text-white flex items-center space-x-1.5">
-                  <span>Code Nexus Assistant</span>
+                  <span>Code Nexus Guide</span>
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                 </h3>
-                <p className="text-[10px] text-slate-400">Online | AI Learning & Support</p>
+                <p className="text-[10px] text-slate-400">Built-in learning & website guide</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-1">
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
                 className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors"
-                title="Close chat"
+                title="Close guide"
+                aria-label="Close Code Nexus Guide"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -158,6 +163,8 @@ export default function ChatbotWidget() {
           {/* Mode Tabs */}
           <div className="grid grid-cols-2 p-1.5 bg-slate-900/60 border-b border-slate-800/80 gap-1 text-xs">
             <button
+              type="button"
+              aria-pressed={mode === 'learning'}
               onClick={() => setMode('learning')}
               className={`flex items-center justify-center space-x-1.5 py-1.5 rounded-lg transition-all font-medium ${
                 mode === 'learning'
@@ -166,10 +173,12 @@ export default function ChatbotWidget() {
               }`}
             >
               <GraduationCap className="w-3.5 h-3.5" />
-              <span>Learning Assistant</span>
+              <span>Learning Guide</span>
             </button>
 
             <button
+              type="button"
+              aria-pressed={mode === 'support'}
               onClick={() => setMode('support')}
               className={`flex items-center justify-center space-x-1.5 py-1.5 rounded-lg transition-all font-medium ${
                 mode === 'support'
@@ -183,7 +192,7 @@ export default function ChatbotWidget() {
           </div>
 
           {/* Chat Messages */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-3.5 text-xs">
+          <div className="flex-1 p-4 overflow-y-auto space-y-3.5 text-xs" aria-live="polite">
             {messages.map((m) => {
               const isUser = m.sender === 'user';
               return (
@@ -225,6 +234,7 @@ export default function ChatbotWidget() {
           <div className="px-3 py-1.5 border-t border-slate-800/60 bg-slate-900/30 overflow-x-auto flex space-x-1.5 no-scrollbar">
             {(mode === 'learning' ? quickPromptsLearning : quickPromptsSupport).map((prompt, idx) => (
               <button
+                type="button"
                 key={idx}
                 onClick={() => handleSend(prompt)}
                 className="shrink-0 px-2.5 py-1 bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 rounded-full text-[10px] border border-slate-700/50 transition-colors"
@@ -236,19 +246,25 @@ export default function ChatbotWidget() {
 
           {/* Input Box */}
           <div className="p-3 border-t border-slate-800 bg-slate-900/80 flex items-center space-x-2">
+            <label htmlFor="code-nexus-guide-input" className="sr-only">
+              Message for Code Nexus Guide
+            </label>
             <input
+              id="code-nexus-guide-input"
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-              placeholder={mode === 'learning' ? 'Ask a concept, code question, or error...' : 'Ask about points, exams, library, certificates...'}
+              placeholder={mode === 'learning' ? 'Ask about pointers, Big O, OOP, joins...' : 'Ask about points, exams, library, certificates...'}
               className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
             />
             <button
+              type="button"
               onClick={() => handleSend()}
               disabled={!input.trim() || loading}
               className="p-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white disabled:opacity-40 transition-colors"
-              title="Send"
+              title="Send message"
+              aria-label="Send message to Code Nexus Guide"
             >
               <Send className="w-4 h-4" />
             </button>

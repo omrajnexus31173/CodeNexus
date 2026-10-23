@@ -36,6 +36,9 @@ export default function Navbar() {
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
 
   useEffect(() => {
+    setMobileMenuOpen(false);
+    setUserDropdownOpen(false);
+    setThemeDropdownOpen(false);
     fetchUser();
   }, [pathname]);
 
@@ -90,24 +93,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}
-          <Link href={user ? '/dashboard' : '/'} className="flex items-center space-x-3 group">
+          <Link href={user ? '/dashboard' : '/'} className="flex shrink-0 items-center space-x-3 group" aria-label="Code Nexus home">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 p-0.5 shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
               <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
                 <Code2 className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
               </div>
             </div>
             <div>
-              <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300 bg-clip-text text-transparent">
+              <span className="font-bold text-base sm:text-lg tracking-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300 bg-clip-text text-transparent">
                 Code Nexus
               </span>
-              <span className="hidden sm:inline-block text-[10px] uppercase tracking-wider text-slate-400 block -mt-1 font-mono">
+              <span className="hidden sm:block text-[10px] uppercase tracking-wider text-slate-400 -mt-1 font-mono">
                 Academy & Lab
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden xl:flex items-center space-x-1">
             {navLinks.map((link) => {
               const Icon = link.icon;
               const active = isActive(link.href);
@@ -115,7 +118,8 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                  aria-current={active ? 'page' : undefined}
+                  className={`flex whitespace-nowrap items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                     active
                       ? 'bg-blue-600/20 text-cyan-300 border border-blue-500/30 shadow-sm shadow-blue-500/10'
                       : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
@@ -129,12 +133,12 @@ export default function Navbar() {
           </div>
 
           {/* Right Controls */}
-          <div className="flex items-center space-x-3">
+          <div className="flex shrink-0 items-center space-x-2 sm:space-x-3">
             {/* Points Pill (Active if user logged in) */}
             {user && (
               <Link
                 href="/dashboard"
-                className="flex items-center space-x-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold hover:border-amber-400 transition-colors shadow-sm"
+                className="hidden min-[420px]:flex items-center space-x-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold hover:border-amber-400 transition-colors shadow-sm"
                 title="Your Code Nexus Points Balance (150 points unlocks Library Books!)"
               >
                 <Coins className="w-3.5 h-3.5 text-amber-400" />
@@ -145,9 +149,13 @@ export default function Navbar() {
             {/* Theme Toggle Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
+                type="button"
+                onClick={() => { setThemeDropdownOpen(!themeDropdownOpen); setUserDropdownOpen(false); }}
                 className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors"
                 title={`Theme: ${mode}`}
+                aria-label="Choose color theme"
+                aria-haspopup="menu"
+                aria-expanded={themeDropdownOpen}
               >
                 {resolvedTheme === 'dark' ? <Moon className="w-4 h-4 text-cyan-400" /> : <Sun className="w-4 h-4 text-amber-400" />}
               </button>
@@ -183,13 +191,17 @@ export default function Navbar() {
             {user ? (
               <div className="relative">
                 <button
-                  onClick={() => setUserDropdownOpen(!userDropdownOpen)}
+                  type="button"
+                  onClick={() => { setUserDropdownOpen(!userDropdownOpen); setThemeDropdownOpen(false); }}
                   className="flex items-center space-x-2 p-1.5 rounded-lg hover:bg-slate-800/60 transition-colors"
+                  aria-label="Open account menu"
+                  aria-haspopup="menu"
+                  aria-expanded={userDropdownOpen}
                 >
                   <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-xs font-bold uppercase">
                     {user.full_name ? user.full_name.charAt(0) : 'U'}
                   </div>
-                  <span className="hidden md:inline-block text-xs font-medium text-slate-200">
+                  <span className="hidden xl:inline-block text-xs font-medium text-slate-200">
                     {user.full_name?.split(' ')[0]}
                   </span>
                   <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
@@ -275,10 +287,14 @@ export default function Navbar() {
             )}
 
             {/* Mobile Hamburger Button */}
-            <div className="lg:hidden flex items-center">
+            <div className="xl:hidden flex items-center">
               <button
+                type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="p-2 text-slate-400 hover:text-white"
+                aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-navigation"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -289,7 +305,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden px-4 pt-2 pb-4 space-y-1 bg-slate-950 border-b border-slate-800">
+        <div id="mobile-navigation" className="xl:hidden px-4 pt-2 pb-4 space-y-1 bg-slate-950 border-b border-slate-800">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const active = isActive(link.href);

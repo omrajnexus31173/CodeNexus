@@ -1,0 +1,48 @@
+# Code Nexus web/API service on Render.
+#
+# IMPORTANT: Render's managed Node environment is not the verified host for
+# Code Nexus's local Bubblewrap/compiler sandbox. This blueprint therefore
+# selects the external execution adapter. Supply an authenticated HTTPS
+# execution service that implements the contract in DEPLOYMENT.md, or code
+# execution/grading will remain unavailable. PostgreSQL is also external:
+# use an externally reachable TLS connection string (for Neon, the pooled
+# -pooler endpoint for runtime).
+services:
+  - type: web
+    name: code-nexus
+    runtime: node
+    plan: free
+    branch: main
+    autoDeploy: true
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20"
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_POOL_MAX
+        value: "5"
+      - key: APP_URL
+        sync: false
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: TRUST_PROXY_HEADERS
+        value: "true"
+      - key: ALLOW_SOURCE_DOWNLOAD
+        value: "false"
+      - key: CODE_RUNNER_MODE
+        value: external
+      - key: CODE_EXECUTION_SERVICE_URL
+        sync: false
+      - key: CODE_EXECUTION_API_KEY
+        sync: false
