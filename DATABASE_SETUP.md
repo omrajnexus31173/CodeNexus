@@ -55,7 +55,12 @@ If you wish to deploy Code Nexus online:
    ```
    This runs base schema creation, course/129-topic seeding, education/learning-integrity/question-architecture/auth migrations, the original 141 question IDs, and library resources in order. It does not create demo users. Never run `seed-users.js` against a public production database.
 
-Those base commands do **not** by themselves restore the exact audited 18,191-row local bank. Build/start the app, run the curriculum example validators with `--mark-tested`, then follow the evidence order in `README.md`: topic-linked validation → curated audit → verified-core validation → topic/core seeding → `node scripts/apply-question-architecture.js` → `node scripts/approve-verified-core.js` → `node scripts/verify-final-question-bank.js`. The 17,859 legacy pipeline rows must be restored from a database backup if exact preservation is required; the source ZIP is not a PostgreSQL dump, and the legacy generator is disabled by default.
+Those base commands do **not** by themselves restore the audited 18,191-row bank. Two verified paths are documented in `docs/QUESTION_BANK_PROVENANCE_AND_EXPORT.md`:
+
+1. **Preferred exact transfer:** export `public.questions` only with `npm run questions:export`, bootstrap a fresh database, validate with `npm run questions:import -- --dry-run`, then import with `--confirm-upsert --exact`. This excludes users/passwords/learner data and preserves timestamps/validation evidence.
+2. **Repository reconstruction:** run the legacy generator, repairs, architecture/quarantine steps, hash-checked topic/core seeders, and approval in the documented order. This reproduces the question content and mappings, but PostgreSQL assigns new `created_at`/approval timestamps.
+
+The source ZIP alone is not a PostgreSQL dump, and the legacy generator is disabled by default. Use `scripts/question-bank/verify-question-bank-counts.sql` to verify the resulting counts in the actual target database.
 
 ---
 
@@ -74,6 +79,9 @@ Those base commands do **not** by themselves restore the exact audited 18,191-ro
 | `npm run test:sql` | **SQL Fixtures** | Executes the stored SQL lesson queries against throwaway PostgreSQL TEMP tables and verifies the documented result sets. |
 | `npm run report:coverage` | **Coverage Report** | Regenerates `docs/TOPIC_COVERAGE_REPORT.md` (per-track completeness, tested/reviewed status, question linkage, duplicate detection). |
 | `node scripts/seed-questions.js` | **Question Bank** | Seeds the original 141 IDs: 9 execution-tested hand-written questions and 132 honestly labelled generated variants (exam-ineligible). |
+| `npm run questions:export -- --out-dir <dir>` | **Question-Bank Export** | Read-only export of every `public.questions` row plus course/topic mapping CSVs and a hash manifest; excludes users/passwords/learner data. |
+| `npm run questions:import -- --input <file> --dry-run` | **Question-Bank Import Check** | Validates export hashes, IDs, schema, and counts without connecting to a database. Add `--confirm-upsert --exact` only for an approved write to a prepared target; writes only `public.questions` and never deletes rows. |
+| `psql ... -f scripts/question-bank/verify-question-bank-counts.sql` | **Question Counts** | Read-only SQL for total/status/course/cohort counts and course/topic mapping integrity. |
 | `npm run repair:generated` | **Generated Repair** | Transactionally repairs only oracle-provable legacy pipeline reference/output/SQL-fixture defects; promotes nothing. |
 | `npm run quarantine:generated` | **Exam Quarantine** | Sets every non-tested question `is_exam_eligible=false` without deleting rows or changing tested eligibility. |
 | `npm run audit:generated` | **Generated Audit** | Deterministically audits all 17,991 generated rows and sandbox-executes the current stratified sample (36 rows in the 2026-10-20 run); fails if an unready generated row is exam-eligible. |

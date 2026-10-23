@@ -21,6 +21,8 @@
     "verify:db": "node scripts/verify-db.js",
     "db:bootstrap": "node scripts/bootstrap-database.js",
     "db:bootstrap:content": "node scripts/bootstrap-database.js --with-content --verify",
+    "questions:export": "node scripts/export-question-bank.js",
+    "questions:import": "node scripts/import-question-bank.js",
     "check:production": "node scripts/check-production-config.js",
     "smoke": "node scripts/smoke-production.js",
     "verify:questions": "node scripts/validate-question-bank-deep.js",

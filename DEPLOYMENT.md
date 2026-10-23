@@ -146,6 +146,28 @@ node scripts/verify-final-question-bank.js
 
 Expected final state: 18,191 questions = 200 tested + 17,991 generated; eight supported courses have strict pools of 25; HTML/CSS and App Development remain exam-unavailable. These scripts update evidence JSON files—review `git diff` before committing any regenerated evidence.
 
+### 4.3A Preferred transfer: verified question-bank-only export/import
+
+For moving the **exact existing** question rows to a fresh production database, prefer the question-bank-only export over source regeneration. It preserves timestamps and validation evidence, excludes users/passwords and all learner data, and was verified by importing into a fresh PostgreSQL database and re-exporting with the same canonical file hash. See `docs/QUESTION_BANK_PROVENANCE_AND_EXPORT.md` for the source-file map, SQL queries, hashes, and full verification evidence.
+
+```bash
+# Source database (maintenance/direct URL preferred)
+npm run questions:export -- --out-dir /secure/path/question-bank-export
+
+# Fresh target database: create schema/taxonomy first
+npm run db:bootstrap:content
+npm run questions:import -- \
+  --input /secure/path/question-bank-export/questions.ndjson.gz --dry-run
+npm run questions:import -- \
+  --input /secure/path/question-bank-export/questions.ndjson.gz \
+  --confirm-upsert --exact
+node scripts/verify-db.js --require-exam-bank
+psql "$DATABASE_URL_UNPOOLED" -v ON_ERROR_STOP=1 \
+  -f scripts/question-bank/verify-question-bank-counts.sql
+```
+
+The importer writes only `public.questions`, requires explicit `--confirm-upsert`, and never deletes/truncates rows. Back up an existing production database and obtain owner approval before import. A GitHub clone or source ZIP alone is not proof that questions exist in an online database; run the SQL counts and re-export hash against the hosted database after transfer.
+
 ### 4.4 Neon pooled versus direct URLs
 
 - Runtime/serverless: pooled `-pooler` endpoint in `DATABASE_URL`.

@@ -35,6 +35,9 @@ yarn-error.log*
 .playwright-cli/
 public/code-nexus-production.zip
 
+# generated database exports (store verified exports outside Git)
+/exports/
+
 # vercel
 .vercel
 
