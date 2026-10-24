@@ -11,7 +11,7 @@ const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
   title: 'Code Nexus | Learn, Code, Practice & Certify',
-  description: 'Master C, C++, Python, Java, SQL, Full-Stack, and System Design with sandboxed execution, 4000+ practice questions, 2-hour certification exams, and automated career profiles.',
+  description: 'Master C, C++, Python, Java, JavaScript, SQL, DSA, and System Design with interactive lessons, sandboxed practice, certification exams, and career profiles.',
 };
 
 export default function RootLayout({
@@ -24,8 +24,14 @@ export default function RootLayout({
       <body className="font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-cyan-400 focus:px-4 focus:py-2 focus:font-semibold focus:text-slate-950"
+            >
+              Skip to main content
+            </a>
             <Navbar />
-            <main className="flex-1">{children}</main>
+            <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
             <Footer />
             <ChatbotWidget />
           </div>

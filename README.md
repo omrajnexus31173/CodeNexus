@@ -96,9 +96,9 @@ Executes untrusted user code inside a secure sandbox with CPU timeouts (5s) and 
 
 ---
 
-### 7. Dual-Role AI Assistant
-- **🎓 Learning Assistant**: Explains code in simple English, breaks down compiler errors, and provides hints.
-- **🌐 Website Support Assistant**: Guides users on accounts, points, exams, certificates, library, and resume builder.
+### 7. Built-in Dual-Mode Guide
+- **🎓 Learning Guide**: Keyword-based explanations for selected foundations such as pointers, memory allocation, recursion, segmentation faults, Big O, OOP encapsulation, and SQL joins. Complete instruction remains in the 129 course topics.
+- **🌐 Website Support Guide**: Explains points, exams, certificates, library unlocking, resume building, and appearance settings using the platform's actual rules.
 
 ---
 
@@ -115,10 +115,11 @@ Executes untrusted user code inside a secure sandbox with CPU timeouts (5s) and 
 ```bash
 npm ci
 cp .env.example .env  # replace every placeholder with local-only values
-node scripts/verify-db.js
+npm run db:bootstrap:content  # schema + courses/curriculum/base questions/library; no user seeding
+npm run verify:db
 ```
 
-Fresh-install content order: `node scripts/init-db.js` → `node scripts/seed-courses.js` → `npm run migrate:education` → `npm run seed:education` (applies the full 14-section curriculum) → `npm run migrate:integrity` → `node scripts/migrate-question-architecture.js` → seed questions/library/users as in `DATABASE_SETUP.md`. Build and start the app, restore topic execution statuses with `node scripts/validate-curriculum-examples.js --mark-tested` and `node scripts/validate-sql-examples.js --mark-tested`, then build the verified question core only in evidence order: run `node scripts/validate-topic-linked-questions.js`, `node scripts/audit-curated-starters.js`, and `node scripts/validate-verified-core.js`; seed topic-linked and verified-core rows; run `node scripts/apply-question-architecture.js`; run the separate `node scripts/approve-verified-core.js` gate; finally run `node scripts/verify-final-question-bank.js`. For an existing legacy generated bank, preserve it and run `npm run repair:generated` → `node scripts/repair-sql-string-contracts.js` → `node scripts/apply-question-architecture.js` → `npm run audit:generated`; never bulk-promote it.
+For a fresh database, `npm run db:bootstrap:content` runs the ordered base sequence—`init-db.js` → course seeding → education migration/seeding → learning-integrity, question-architecture, and auth-security migrations → base question/library seeding—and verifies the result. It never seeds users. Build and start the app, restore topic execution statuses with `node scripts/validate-curriculum-examples.js --mark-tested` and `node scripts/validate-sql-examples.js --mark-tested`, then build the verified question core only in evidence order: run `node scripts/validate-topic-linked-questions.js`, `node scripts/audit-curated-starters.js`, and `node scripts/validate-verified-core.js`; seed topic-linked and verified-core rows; run `node scripts/apply-question-architecture.js`; run the separate `node scripts/approve-verified-core.js` gate; finally run `node scripts/verify-final-question-bank.js`. The complete maintained sequence for reconstructing the quarantined legacy cohort and the 18,191-row state is in `DEPLOYMENT.md` section 4.3; never bulk-promote generated rows. For exact transfer of an existing bank, use the verified question-bank-only export/import in section 4.3A. The row-by-row source map, hashes, SQL count queries, and fresh-database verification are in `docs/QUESTION_BANK_PROVENANCE_AND_EXPORT.md`; that export excludes student accounts, passwords, and learner data.
 
 ### 2. Run Test Suites
 ```bash
@@ -131,12 +132,12 @@ npm run test:sandbox     # 7 deep sandbox isolation boundary tests
 npm run test:topic-questions   # executes all 79 topic-linked references + starters in the sandbox
 npm run test:topic-duplicates  # mapping/duplicate checks for the 79
 node scripts/validate-verified-core.js  # sequentially executes all 112 verified-core references + starters
-node scripts/validate-sql-string-contracts.js  # executes all 186 repaired SQLite phrases contracts
+node scripts/validate-sql-string-contracts.js  # executes the repaired SQLite string-contract cohort present in the target DB (186 in preserved 2026-10-20 evidence)
 npm run audit:starters   # execution-audits curated starters/references for solution leaks
 npm run test:integrity   # 61 learner API tests: auth, quiz, progress, hints, recommendations, approved exam pools
 npm run audit:generated  # all 17,991 generated rows deterministically + current stratified sandbox sample (36 rows in the 2026-10-20 run)
 node scripts/verify-final-question-bank.js  # DB counts + strict pools + fresh reference/starter execution for all 200 tested rows
-npm run verify:db        # 6 database integrity checks
+npm run verify:db        # 6 core DB checks; add -- --require-exam-bank for 7 incl. strict pools
 npm run verify:questions # structural bank audit incl. non-tested exam eligibility = 0
 npm run migrate:integrity  # idempotent quiz-attempt/exam-session migration (safe to re-run)
 npm run report:coverage  # regenerates docs/TOPIC_COVERAGE_REPORT.md
@@ -159,8 +160,8 @@ The application binds to port 3000 and is immediately accessible.
 
 ## ⚠️ Production Notes (read before deploying)
 
-This codebase passes its local functional/security suites, but that is **not** a claim that a real public deployment has been tested. The 2026-10-20 security remediation migrated the app to **Next.js 15.5.28**, retained React 18.3.1, and uses reviewed overrides for PostCSS 8.5.31 and Monaco's DOMPurify 3.4.17. After a clean `npm ci`, `npm audit --omit=dev --json` exits 0 with **0 production vulnerabilities**. A full audit still reports 9 development-toolchain findings (7 high, 2 moderate) whose safe removal requires a separately tested Tailwind/toolchain migration; see `docs/SECURITY_REMEDIATION_REPORT.md` for exact before/after findings.
+This codebase passes its local functional/security suites, but that is **not** a claim that a real public deployment has been tested. The 2026-10-20 security remediation migrated the app to **Next.js 15.5.28**, retained React 18.3.1, and uses reviewed overrides for PostCSS 8.5.31 and Monaco's DOMPurify 3.4.17. After a clean `npm ci`, `npm audit --omit=dev --json` exits 0 with **0 production vulnerabilities**. The dated 2026-10-20 full audit reported 9 development-toolchain findings (7 high, 2 moderate). A fresh 2026-10-23 recovery audit reported a different advisory snapshot—3 moderate development-only findings in the Tailwind/PostCSS selector-parser chain—and the breaking Tailwind 4 fix was not forced; see `docs/SECURITY_REMEDIATION_REPORT.md` for the 2026-10-20 before/after record and `docs/REPOSITORY_RECOVERY_AUDIT_2026-10-23.md` for the recovery run.
 
-Before real deployment you must still: configure a real Resend API key + verified sender domain and test live mailbox delivery (signup cannot be completed without it); set a unique strong `JWT_SECRET` of at least 32 characters; set the canonical HTTPS app URL and run behind correctly configured TLS/proxy headers; provide Bubblewrap/`prlimit`-capable Linux hosting (or wire the external sandbox adapter) — user code must never run in the Next.js process; install Node 20, GCC/G++, a compatible OpenJDK (the local gate used 11), Python 3, and SQLite; provision PostgreSQL and apply the documented migration/seed sequence; never seed local demo accounts into production; design immediate stateless-JWT revocation if your threat model requires it; and seat-test email verification, password reset, cookies, and certificate verification end-to-end on the target domain. The production source-download API is disabled unless `ALLOW_SOURCE_DOWNLOAD=true`, and no source ZIP is shipped under `public/`.
+Follow `DEPLOYMENT.md` for the VM, Render, and Netlify paths; run `npm run check:production -- --ping` before launch and `npm run smoke -- https://<your-domain>` after launch. Before real deployment you must still: configure a real Resend API key + verified sender domain and test live mailbox delivery (signup cannot be completed without it); set a unique strong `JWT_SECRET` of at least 32 characters; set the canonical HTTPS app URL and run behind correctly configured TLS/proxy headers; provide Bubblewrap/`prlimit`-capable Linux hosting (or wire the external sandbox adapter) — user code must never run in the Next.js process; install Node 20, GCC/G++, a compatible OpenJDK (the local gate used 11), Python 3, and SQLite; provision PostgreSQL and apply the documented migration/seed sequence; never seed local demo accounts into production; design immediate stateless-JWT revocation if your threat model requires it; and smoke-test email verification, password reset, cookies, and certificate verification end-to-end on the target domain. The production source-download API is disabled unless `ALLOW_SOURCE_DOWNLOAD=true`, and no source ZIP is shipped under `public/`.
 
 Known content limits remain: 17 lesson topics are `reviewed` (not execution-tested); 17,991 generated questions remain unverified as complete curriculum-mapped questions and are quarantined from exams; the eight supported exam courses have 25 approved tested questions each; and HTML/CSS and App Development have no graded exam until deterministic graders/runtimes exist (see `docs/QUESTION_BANK_REPORT.md`). The local database used for the 2026-10-20 rerun was reconstructed from preserved scripts after a sandbox reset; the source ZIP is not a database backup.

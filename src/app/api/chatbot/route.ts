@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     let reply = '';
     let suggestions: string[] = [];
 
-    // --- MODE 1: LEARNING ASSISTANT ---
+    // --- MODE 1: BUILT-IN LEARNING GUIDE ---
     if (mode === 'learning') {
       if (lowerMsg.includes('pointer') || lowerMsg.includes('memory') || lowerMsg.includes('address')) {
         reply = `**Understanding Pointers & Memory in Simple English:**
@@ -37,6 +37,7 @@ A Pointer is simply a variable that stores a **memory address** (where another v
 
 • **Stack Memory**: Automatically managed for function variables. Fast, but fixed size.
 • **Heap Memory**: Manual RAM you request dynamically at runtime via \`malloc(size)\`.
+• **malloc vs calloc**: \`malloc(bytes)\` leaves the new bytes uninitialized; \`calloc(count, elementSize)\` allocates an array and zeroes its bytes.
 
 ⚠️ **Golden Rule**: For every \`malloc()\` or \`calloc()\`, there MUST be an equal \`free()\`! If you discard a pointer without calling \`free(ptr)\`, that memory stays reserved until the OS terminates your app (called a **Memory Leak**).
 
@@ -75,22 +76,49 @@ Big O measures how long your algorithm takes as your data size (N) grows:
 • **O(N log N)**: Fastest comparison sorting (Merge Sort, Quick Sort).
 • **O(N²)**: Nested loops (e.g., Bubble sort). Gets slow quickly on large data!`;
         suggestions = ['Difference between time and space complexity', 'How to analyze two nested loops'];
+      } else if (lowerMsg.includes('encapsulation') || lowerMsg.includes('oop') || lowerMsg.includes('object oriented') || lowerMsg.includes('object-oriented')) {
+        reply = `**OOP Encapsulation in Simple Terms:**
+
+Encapsulation means keeping an object's internal data private and exposing only safe operations.
+
+Example:
+• A \`BankAccount\` keeps \`balance\` private.
+• Other code cannot set the balance to a negative value directly.
+• It must call checked operations such as \`deposit(amount)\` or \`withdraw(amount)\`.
+
+This protects the object's rules in one place. In C++ use \`private\` fields with public member functions; in Java use private fields with validated methods. Getters/setters alone are not automatically good encapsulation—the public operations should preserve valid state.`;
+        suggestions = ['Explain C pointers with an example', 'Explain Big O time complexity', 'How does SQL INNER JOIN work?'];
+      } else if (lowerMsg.includes('inner join') || lowerMsg.includes('sql join') || lowerMsg.includes(' join')) {
+        reply = `**How SQL INNER JOIN Works:**
+
+An \`INNER JOIN\` returns only rows that have a matching row in both tables.
+
+Example:
+\`SELECT s.name, c.title FROM students s INNER JOIN courses c ON c.id = s.course_id;\`
+
+• A student whose \`course_id\` matches a course appears in the result.
+• A student with no matching course is excluded.
+• A course with no matching student is also excluded.
+
+Use \`LEFT JOIN\` instead when every row from the left table must appear even if there is no match. Always write the join condition in \`ON\`; forgetting it can create an unintended cross-product of rows.`;
+        suggestions = ['Explain Big O time complexity', 'Explain C pointers with an example', 'What is OOP encapsulation?'];
       } else {
-        reply = `I am your **Code Nexus Learning Assistant**! 
+        reply = `I am the built-in **Code Nexus Learning Guide**.
 
-I can explain any coding topic in simple, friendly English with diagrams, flowcharts, and clear examples across:
-• **C & C++**: Pointers, Memory, Structs, OOP, Templates, STL, RAII.
-• **Python**: Data structures, NumPy, Pandas, PyTorch, OpenCV.
-• **Java**: JVM, Classes, Collections, Multithreading, Streams.
-• **SQL & Databases**: Normalization, JOINs, CTEs, Window Functions, Indexing.
-• **DSA & System Design**: Big O, Trees, Graphs, DP, Scaling, Caching.
+I provide short explanations for selected foundations:
+• C pointers and memory addresses
+• \`malloc\`, \`free\`, and memory leaks
+• Recursion and segmentation faults
+• Big O complexity
+• OOP encapsulation
+• SQL \`INNER JOIN\` and \`LEFT JOIN\`
 
-Ask me about any concept or paste a compiler error you want help diagnosing!`;
+For complete lessons, examples, quizzes, and practice, open the relevant topic from **Courses**. I am a keyword-based guide, so please include one of the concepts above for a focused explanation.`;
         suggestions = ['Explain C pointers with an example', 'What is OOP Encapsulation?', 'How does SQL INNER JOIN work?'];
       }
     }
 
-    // --- MODE 2: WEBSITE SUPPORT ASSISTANT ---
+    // --- MODE 2: WEBSITE SUPPORT GUIDE ---
     else {
       if (lowerMsg.includes('point') || lowerMsg.includes('score') || lowerMsg.includes('how to earn')) {
         reply = `**Code Nexus Points & Scoring Rules:**
@@ -108,10 +136,11 @@ Here is the exact points breakdown:
         reply = `**Code Nexus Examination & Certificate Guidelines:**
 
 • **Duration**: 2 Hours (7200 seconds).
-• **Question Bank**: 50–100 questions randomized dynamically from the question pool.
+• **Questions**: Each supported exam contains **25 questions** drawn only from that exact course's tested, eligible strict pool.
+• **Availability**: Exams are supported for C, C++, Python, Java, JavaScript, SQL & Databases, DSA, and System Design. HTML/CSS and App Development exams remain unavailable until a deterministic grader/runtime is integrated.
 • **Fullscreen Mode**: Monitored examination. If you exit fullscreen or switch browser tabs, the system issues warning alerts. Repeated violations will end the examination.
 • **Passing Score**: You must score **strictly more than 85%** to pass!
-• **Certificate**: If you score > 85%, you receive an official, cryptographically verifiable Code Nexus Certificate with a unique ID (e.g. \`CN-CERT-2026-XXXX\`) and public verification link, plus **+10 points**!`;
+• **Certificate**: If you score > 85%, you receive a Code Nexus certificate record with a unique ID (for example \`CN-CERT-2026-XXXX\`) that can be checked on the public verification page, plus **+10 points**!`;
         suggestions = ['Where can I verify a certificate?', 'Can I retake an exam if I fail?'];
       } else if (lowerMsg.includes('library') || lowerMsg.includes('unlock') || lowerMsg.includes('book')) {
         reply = `**Code Nexus Resource Library:**

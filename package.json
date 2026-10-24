@@ -2,6 +2,10 @@
   "name": "code-nexus",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0 <21",
+    "npm": ">=10"
+  },
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
@@ -15,6 +19,12 @@
     "test:sql": "node scripts/validate-sql-examples.js",
     "test:sandbox": "node scripts/audit-sandbox-deep.js",
     "verify:db": "node scripts/verify-db.js",
+    "db:bootstrap": "node scripts/bootstrap-database.js",
+    "db:bootstrap:content": "node scripts/bootstrap-database.js --with-content --verify",
+    "questions:export": "node scripts/export-question-bank.js",
+    "questions:import": "node scripts/import-question-bank.js",
+    "check:production": "node scripts/check-production-config.js",
+    "smoke": "node scripts/smoke-production.js",
     "verify:questions": "node scripts/validate-question-bank-deep.js",
     "report:coverage": "node scripts/generate-coverage-report.js",
     "migrate:education": "node scripts/migrate-education-engine.js",

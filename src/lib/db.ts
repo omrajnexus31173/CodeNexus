@@ -1,5 +1,5 @@
 import { Pool, PoolClient, QueryResult, QueryResultRow } from 'pg';
-import { isPlaceholderValue, isProduction } from './env';
+import { isPlaceholderValue, isProduction, safeErrorForLog } from './env';
 
 function getConnectionString(): string {
   const dbUrl = process.env.DATABASE_URL?.trim();
@@ -37,25 +37,67 @@ function getSslConfig(connectionString: string) {
   return { rejectUnauthorized: true };
 }
 
-const connectionString = getConnectionString();
+function getPoolMax(): number {
+  const parsed = Number.parseInt(process.env.DATABASE_POOL_MAX || '', 10);
+  if (!Number.isFinite(parsed)) return 10;
+  return Math.min(20, Math.max(1, parsed));
+}
 
-const pool = new Pool({
-  connectionString,
-  ssl: getSslConfig(connectionString),
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 5000,
-});
+type DatabaseGlobal = typeof globalThis & {
+  __codeNexusPool?: Pool;
+};
+
+const databaseGlobal = globalThis as DatabaseGlobal;
+
+/**
+ * Create the pool lazily. Next.js imports route modules while collecting page
+ * data during `next build`; requiring a runtime database secret at import
+ * time makes otherwise valid production builds fail on hosted builders.
+ * Runtime queries still fail closed when DATABASE_URL is absent or invalid.
+ */
+export function getPool(): Pool {
+  if (!databaseGlobal.__codeNexusPool) {
+    const connectionString = getConnectionString();
+    const pool = new Pool({
+      connectionString,
+      ssl: getSslConfig(connectionString),
+      max: getPoolMax(),
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 5000,
+    });
+
+    pool.on('error', (error) => {
+      console.error('Idle PostgreSQL client error:', safeErrorForLog(error));
+    });
+
+    databaseGlobal.__codeNexusPool = pool;
+  }
+
+  return databaseGlobal.__codeNexusPool;
+}
+
+export function isDatabaseConfigured(): boolean {
+  try {
+    getConnectionString();
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function checkDatabaseConnection(): Promise<void> {
+  await getPool().query('SELECT 1');
+}
 
 export async function query<T extends QueryResultRow = any>(
   text: string,
   params?: any[]
 ): Promise<QueryResult<T>> {
-  return pool.query<T>(text, params);
+  return getPool().query<T>(text, params);
 }
 
 export async function getClient(): Promise<PoolClient> {
-  return pool.connect();
+  return getPool().connect();
 }
 
 /**
@@ -101,4 +143,19 @@ export async function adjustPointsWithLedger(
   return { newBalance };
 }
 
-export default pool;
+/**
+ * Backwards-compatible lazy default export. Importing this module does not
+ * create a pool; the first property access delegates to getPool().
+ */
+const lazyPool = new Proxy({} as Pool, {
+  get(_target, property) {
+    const pool = getPool();
+    const value = Reflect.get(pool, property, pool);
+    return typeof value === 'function' ? value.bind(pool) : value;
+  },
+  set(_target, property, value) {
+    return Reflect.set(getPool(), property, value);
+  },
+});
+
+export default lazyPool;
